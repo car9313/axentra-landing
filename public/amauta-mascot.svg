@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="100%" height="100%">
+  <!-- Amauta Owl Mascot SVG -->
+  <defs>
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1D3A"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#0A1D3A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Wing (Spread Outward) -->
+  <path d="M 50 110 C 25 100 10 130 5 155 C 20 160 40 150 55 135 Z" fill="url(#wingGrad)" stroke="#0A1D3A" stroke-width="2.5" stroke-linejoin="round" />
+  <!-- Feather details left wing -->
+  <path d="M 12 145 C 25 135 40 138 52 128" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6" />
+  <path d="M 18 152 C 30 145 42 146 54 133" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Right Wing (Spread Outward) -->
+  <path d="M 150 110 C 175 100 190 130 195 155 C 180 160 160 150 145 135 Z" fill="url(#wingGrad)" stroke="#0A1D3A" stroke-width="2.5" stroke-linejoin="round" />
+  <!-- Feather details right wing -->
+  <path d="M 188 145 C 175 135 160 138 148 128" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6" />
+  <path d="M 182 152 C 170 145 158 146 146 133" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Hoodie Body & Torso -->
+  <path d="M 50 110 Q 100 95 150 110 L 155 185 Q 100 200 45 185 Z" fill="url(#hoodieGrad)" stroke="#0A1D3A" stroke-width="3"/>
+  
+  <!-- White Hoodie Front Panel -->
+  <path d="M 68 120 Q 100 115 132 120 L 138 180 Q 100 192 62 180 Z" fill="#FFFFFF" stroke="#0A1D3A" stroke-width="2"/>
+  
+  <!-- Orange Collar / Hoodie Trim -->
+  <path d="M 55 108 C 75 125 125 125 145 108 Q 130 135 100 135 Q 70 135 55 108 Z" fill="url(#orangeGrad)" stroke="#0A1D3A" stroke-width="2"/>
+
+  <!-- Star Icon on Chest -->
+  <polygon points="100,145 103,153 111,153 105,158 107,166 100,161 93,166 95,158 89,153 97,153" fill="url(#orangeGrad)" stroke="#0A1D3A" stroke-width="1"/>
+
+  <!-- Owl Head Base -->
+  <ellipse cx="100" cy="70" rx="42" ry="38" fill="#FFFFFF" stroke="#0A1D3A" stroke-width="3"/>
+
+  <!-- Blue Feather Cap / Tuft Header -->
+  <path d="M 62 50 C 70 25 85 28 100 38 C 115 28 130 25 138 50 C 120 42 80 42 62 50 Z" fill="#2563EB" stroke="#0A1D3A" stroke-width="2.5"/>
+  <path d="M 85 30 L 80 18 L 92 28 L 100 12 L 108 28 L 120 18 L 115 30 Z" fill="#5DA9FF" stroke="#0A1D3A" stroke-width="2"/>
+
+  <!-- Left Eye Outer Circle -->
+  <circle cx="82" cy="72" r="16" fill="#5DA9FF" stroke="#0A1D3A" stroke-width="2.5"/>
+  <circle cx="82" cy="72" r="11" fill="#0A1D3A"/>
+  <circle cx="78" cy="68" r="4" fill="#FFFFFF"/>
+  <circle cx="84" cy="75" r="1.5" fill="#FFFFFF"/>
+
+  <!-- Right Eye Outer Circle -->
+  <circle cx="118" cy="72" r="16" fill="#5DA9FF" stroke="#0A1D3A" stroke-width="2.5"/>
+  <circle cx="118" cy="72" r="11" fill="#0A1D3A"/>
+  <circle cx="114" cy="68" r="4" fill="#FFFFFF"/>
+  <circle cx="120" cy="75" r="1.5" fill="#FFFFFF"/>
+
+  <!-- Yellow/Orange Beak -->
+  <polygon points="100,75 92,88 108,88" fill="#F59E0B" stroke="#0A1D3A" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Cheerful Eyebrows -->
+  <path d="M 68 56 Q 82 50 94 58" fill="none" stroke="#0A1D3A" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 132 56 Q 118 50 106 58" fill="none" stroke="#0A1D3A" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Cute Feet / Claws at bottom -->
+  <path d="M 70 185 Q 65 198 60 202 M 72 186 L 72 204 M 76 185 Q 80 198 84 202" fill="none" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 124 185 Q 120 198 116 202 M 128 186 L 128 204 M 132 185 Q 136 198 140 202" fill="none" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
+</svg>

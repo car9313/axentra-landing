@@ -1,0 +1,37 @@
+/**
+ * Axentra Systems — Design Tokens
+ * Tailwind CSS v4 (@theme) — extraídos del brand mockup (Corporate Identity + Landing)
+ * Importar este archivo en globals.css con: @import "./axentra-design-tokens.css";
+ */
+
+@theme {
+  /* ── Color Palette ─────────────────────────────────────── */
+  --color-axentra-navy:  #0A1D3A; /* fondos oscuros, texto principal, footer */
+  --color-axentra-blue:  #2563EB; /* CTA primario, links activos, acentos */
+  --color-axentra-sky:   #5DA9FF; /* hover states, acentos secundarios */
+  --color-axentra-mist:  #f7faff; /* fondos claros de sección, cards light */
+  --color-axentra-orange: #F4701F; /* acento producto Amauta */
+  --color-axentra-gray:  #687280; /* texto secundario, subtítulos, metadata */
+  --color-axentra-section-title: var(--color-axentra-gray); /* #687280 — títulos de sección */
+
+  /* ── Typography ────────────────────────────────────────── */
+  --font-display: "Archivo", "Archivo Fallback", sans-serif; /* titulares, wordmark */
+  --font-body:    "Inter", "Inter Fallback", sans-serif;      /* párrafos, UI */
+
+  /* ── Radius (botones y cards, consistente con el mockup) ── */
+  --radius-button: 0.5rem;   /* 8px  — botones pill/rounded-md */
+  --radius-card:   1rem;     /* 16px — product cards, panels */
+
+  /* ── Shadow sutil para cards sobre fondo claro ────────── */
+  --shadow-axentra-card: 0 4px 24px -4px rgb(10 29 58 / 0.08);
+}
+
+/* ── Icon defaults ───────────────────────────────────────────
+   Estilo detectado: línea (stroke, no relleno), stroke-width ~1.5–2,
+   compatible con Lucide o Phosphor (usar "regular"/"light" weight en Phosphor).
+   Los iconos heredan color vía currentColor — no hardcodear fill/stroke.
+*/
+.icon-axentra {
+  stroke-width: 1.75;
+  color: var(--color-axentra-navy);
+}
