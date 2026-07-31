@@ -11,6 +11,18 @@ export function HeroSection({ onOpenContact }: HeroSectionProps) {
   return (
     <section className="relative bg-white pt-8 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-28 overflow-hidden border-b border-[var(--color-axentra-mist)]/60">
 
+      {/* Mobile/Tablet: ilustración de fondo, sutil y de baja opacidad, detrás del texto (no ocupa espacio propio) */}
+      <div className="lg:hidden absolute top-0 right-0 w-[70%] sm:w-[55%] pointer-events-none select-none z-0">
+        <img
+          src="/hero-illustration.png"
+          alt=""
+          aria-hidden="true"
+          loading="eager"
+          decoding="async"
+          className="w-full h-auto object-contain opacity-[0.14]"
+        />
+      </div>
+
       {/* Ilustración: en desktop se posiciona absoluta respecto a TODO el section (no al contenedor con padding),
           para que pueda "salirse" del borde derecho de la pantalla y verse más grande */}
       <div className="hidden lg:flex absolute inset-y-0 right-0 w-[48%] xl:w-[44%] items-center justify-end pointer-events-none z-0">
@@ -80,24 +92,7 @@ export function HeroSection({ onOpenContact }: HeroSectionProps) {
             </motion.div>
           </motion.div>
 
-          {/* Columna Derecha en mobile/tablet: imagen normal, contenida (sin bleed, no hay espacio de sobra) */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:hidden relative flex items-center justify-center min-h-[220px] sm:min-h-[320px] md:min-h-[400px]"
-          >
-            <div className="absolute inset-0 bg-gradient-to-tr from-[var(--color-axentra-mist)] to-transparent rounded-3xl -z-10 opacity-60 blur-2xl transform scale-95" />
-            <img
-              src="/hero-illustration.png"
-              alt="Axentra network illustration"
-              loading="eager"
-              decoding="async"
-              className="w-full h-full max-w-[420px] object-contain pointer-events-none select-none"
-            />
-          </motion.div>
-
-          {/* Columna Derecha en desktop: espacio reservado vacío para mantener el grid de 12 columnas
+          {/* En desktop: espacio reservado vacío para mantener el grid de 12 columnas
               (la imagen real vive en el div absoluto de arriba, fuera del grid) */}
           <div className="hidden lg:block lg:col-span-5" aria-hidden="true" />
 

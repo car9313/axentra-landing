@@ -12,6 +12,7 @@ export interface DetailContent {
   bullets?: string[];
   metrics?: { label: string; value: string }[];
   primaryActionLabel?: string;
+  primaryActionHref?: string;
   onPrimaryAction?: () => void;
 }
 
@@ -121,17 +122,30 @@ export function DetailModal({ content, onClose }: DetailModalProps) {
             >
               Close
             </button>
-            {content.primaryActionLabel && content.onPrimaryAction && (
-              <button
-                onClick={() => {
-                  onClose();
-                  content.onPrimaryAction?.();
-                }}
-                className="inline-flex items-center gap-2 bg-[var(--color-axentra-blue)] hover:bg-[#1D4ED8] text-white text-sm font-semibold px-5 py-2.5 rounded-[10px] transition-all cursor-pointer"
-              >
-                <span>{content.primaryActionLabel}</span>
-                <ArrowRight size={16} />
-              </button>
+            {content.primaryActionLabel && (content.primaryActionHref || content.onPrimaryAction) && (
+              content.primaryActionHref ? (
+                <a
+                  href={content.primaryActionHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={onClose}
+                  className="inline-flex items-center gap-2 bg-[var(--color-axentra-blue)] hover:bg-[#1D4ED8] text-white text-sm font-semibold px-5 py-2.5 rounded-[10px] transition-all"
+                >
+                  <span>{content.primaryActionLabel}</span>
+                  <ArrowRight size={16} />
+                </a>
+              ) : (
+                <button
+                  onClick={() => {
+                    onClose();
+                    content.onPrimaryAction?.();
+                  }}
+                  className="inline-flex items-center gap-2 bg-[var(--color-axentra-blue)] hover:bg-[#1D4ED8] text-white text-sm font-semibold px-5 py-2.5 rounded-[10px] transition-all cursor-pointer"
+                >
+                  <span>{content.primaryActionLabel}</span>
+                  <ArrowRight size={16} />
+                </button>
+              )
             )}
           </div>
         </div>

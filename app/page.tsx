@@ -160,8 +160,8 @@ export default function Home() {
           { label: "Retention Rate", value: "3.2x" },
           { label: "Time to Competency", value: "-45%" },
         ],
-        primaryActionLabel: "Request Amauta Demo",
-        onPrimaryAction: () => handleOpenContact("Amauta Product Demo"),
+        primaryActionLabel: "Visit Amauta",
+        primaryActionHref: process.env.NEXT_PUBLIC_AMAUTA_URL,
       });
     } else if (productName === "Kallap") {
       setDetailModalContent({
@@ -180,8 +180,8 @@ export default function Home() {
           { label: "Match Precision", value: "94%" },
           { label: "Internal Mobility", value: "+50%" },
         ],
-        primaryActionLabel: "Request Kallap Briefing",
-        onPrimaryAction: () => handleOpenContact("Kallap Product Briefing"),
+        primaryActionLabel: "Visit Kallap",
+        primaryActionHref: process.env.NEXT_PUBLIC_KALLAP_URL,
       });
     }
   };

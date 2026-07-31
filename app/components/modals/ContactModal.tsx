@@ -66,12 +66,12 @@ export function ContactModal({
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ type: "spring", stiffness: 300, damping: 25 }}
-        className="bg-white rounded-[16px] max-w-lg w-full p-4 sm:p-8 relative shadow-2xl border border-[var(--color-axentra-mist)] max-h-[90vh] overflow-y-auto outline-none"
+        className="bg-white rounded-[16px] max-w-lg w-full p-4 sm:p-8 relative shadow-2xl border border-axentra-mist max-h-[90vh] overflow-y-auto outline-none"
       >
 
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 text-[var(--color-axentra-gray)] hover:text-[var(--color-axentra-navy)] rounded-full hover:bg-[var(--color-axentra-mist)] transition-colors"
+          className="absolute top-5 right-5 p-2 text-(--color-axentra-gray) hover:text-axentra-navy rounded-full hover:bg-[var(--color-axentra-mist)] transition-colors"
           aria-label="Close modal"
         >
           <X size={20} />
@@ -80,13 +80,13 @@ export function ContactModal({
         {!submitted ? (
           <div>
             <div className="space-y-1 mb-6">
-              <span className="font-body text-[var(--color-axentra-blue)] text-xs uppercase font-semibold">
+              <span className="font-body text-axentra-blue text-xs uppercase font-semibold">
                 GET IN TOUCH
               </span>
-              <h3 className="font-display font-bold text-2xl text-[var(--color-axentra-navy)]">
+              <h3 className="font-display font-bold text-2xl text-axentra-navy">
                 Let&apos;s Architect Your Next Project
               </h3>
-              <p className="text-sm text-[var(--color-axentra-gray)] font-body">
+              <p className="text-sm text-(--color-axentra-gray) font-body">
                 Fill out the form below and our enterprise technology specialists will contact you within 24 hours.
               </p>
             </div>
