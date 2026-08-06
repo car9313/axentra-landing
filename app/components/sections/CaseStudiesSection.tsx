@@ -3,6 +3,9 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 
+import { useLanguage } from "@/lib/locale/hooks/useLanguage";
+import { SectionHeader } from "@/app/components/ui/SectionHeader";
+
 interface CaseStudyItem {
   id: string;
   title: string;
@@ -16,42 +19,21 @@ interface CaseStudiesSectionProps {
 }
 
 export function CaseStudiesSection({ onSelectCaseStudy }: CaseStudiesSectionProps) {
-  const caseStudies: CaseStudyItem[] = [
-    {
-      id: "financial-automation",
-      title: "Enterprise Automation for Financial Services",
-      stat: "Reduced manual effort by 60%.",
-      clientCategory: "Fintech & Banking",
-      impactDetail:
-        "Automated complex compliance workflows, data aggregation pipelines, and customer auditing tasks while boosting operational accuracy to 99.8%.",
-    },
-    {
-      id: "cloud-modernization",
-      title: "Cloud Platform Modernization",
-      stat: "Improved scalability and reliability.",
-      clientCategory: "Global Logistics",
-      impactDetail:
-        "Migrated legacy monoliths to modern microservices architecture with zero downtime, lowering infrastructure costs by 35% and improving uptime to 99.99%.",
-    },
-    {
-      id: "ai-operations",
-      title: "AI-Driven Insights for Operations",
-      stat: "Delivered actionable insights at scale.",
-      clientCategory: "Industrial Manufacturing",
-      impactDetail:
-        "Deployed predictive maintenance algorithms and real-time telemetry dashboards, reducing unexpected equipment downtime by over 45%.",
-    },
-  ];
+  const { t } = useLanguage();
+
+  const caseStudies = t("caseStudies:items", {
+    returnObjects: true,
+  }) as unknown as CaseStudyItem[];
 
   return (
     <section id="case-studies" className="bg-[var(--color-axentra-mist)] py-16 md:py-24 border-t border-[var(--color-axentra-mist)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="text-center mb-12 md:mb-16">
-          <span className="font-body text-[var(--color-axentra-section-title)] font-semibold tracking-[0.1em] text-sm uppercase">
-            CASE STUDIES
-          </span>
-        </div>
+        <SectionHeader
+          eyebrow={t("caseStudies:eyebrow")}
+          title={t("caseStudies:title")}
+          description={t("caseStudies:description")}
+        />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {caseStudies.map((study, idx) => (
@@ -77,7 +59,7 @@ export function CaseStudiesSection({ onSelectCaseStudy }: CaseStudiesSectionProp
               </div>
               <div className="mt-6 flex items-center">
                 <span className="inline-flex items-center gap-1.5 font-body font-medium text-sm text-[var(--color-axentra-blue)] group-hover:text-[#1D4ED8] transition-colors">
-                  <span>Read case study</span>
+                  <span>{t("caseStudies:readCaseStudy")}</span>
                   <ArrowRight size={16} className="transition-transform duration-200 group-hover:translate-x-1" />
                 </span>
               </div>

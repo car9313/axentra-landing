@@ -4,6 +4,9 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { Menu, X, ArrowRight } from "lucide-react";
 
+import { LanguageSwitcher } from "@/app/components/locale/LanguageSwitcher";
+import { useLanguage } from "@/lib/locale/hooks/useLanguage";
+
 interface NavbarProps {
   onOpenContact: () => void;
   activeSection?: string;
@@ -42,14 +45,15 @@ function Wordmark({ dark = false }: { dark?: boolean }) {
 
 export function Navbar({ onOpenContact, activeSection }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navLinks = [
-    { label: "Services", href: "#services" },
-    { label: "Products", href: "#products" },
-    { label: "Case Studies", href: "#case-studies" },
-    { label: "About", href: "#about" },
-    { label: "Insights", href: "#insights" },
-    { label: "Contact", href: "#contact" },
+    { label: t("navigation:services"), href: "#services" },
+    { label: t("navigation:products"), href: "#products" },
+    { label: t("navigation:caseStudies"), href: "#case-studies" },
+    { label: t("navigation:about"), href: "#about" },
+    { label: t("navigation:insights"), href: "#insights" },
+    { label: t("navigation:contact"), href: "#contact" },
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -111,17 +115,18 @@ export function Navbar({ onOpenContact, activeSection }: NavbarProps) {
         </nav>
 
         <div className="flex items-center space-x-3">
+          <LanguageSwitcher />
           <button
             onClick={onOpenContact}
             className="inline-flex items-center justify-center bg-[var(--color-axentra-blue)] hover:bg-[#1D4ED8] text-white text-sm font-semibold px-5 py-2.5 rounded-[10px] shadow-[0_1px_3px_rgba(10,29,58,0.06)] transition-all duration-200 active:scale-[0.98] cursor-pointer"
           >
-            Get in Touch
+            {t("common:getInTouch")}
           </button>
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2 text-[var(--color-axentra-navy)] hover:text-[var(--color-axentra-blue)] rounded-lg border border-[var(--color-axentra-mist)] hover:bg-[var(--color-axentra-mist)]/50 transition-colors"
-            aria-label="Toggle navigation menu"
+            aria-label={t("navigation:toggleMenu")}
           >
             {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -157,8 +162,11 @@ export function Navbar({ onOpenContact, activeSection }: NavbarProps) {
               }}
               className="w-full flex items-center justify-center gap-2 bg-[var(--color-axentra-blue)] text-white font-semibold py-3 px-4 rounded-[10px] text-center cursor-pointer"
             >
-              Get in Touch <ArrowRight size={16} />
+              {t("common:getInTouch")} <ArrowRight size={16} />
             </button>
+            <div className="flex justify-center pt-1">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       )}

@@ -1,0 +1,58 @@
+{
+  "eyebrow": "PERSPECTIVAS Y LIDERAZGO DE PENSAMIENTO",
+  "title": "Documentos técnicos y guías de arquitectura",
+  "description": "Análisis experto y planos técnicos seleccionados por los ingenieros líderes de sistemas de Axentra Systems.",
+  "filters": {
+    "All": "Todas",
+    "AI & ML": "IA y ML",
+    "Cloud & Security": "Cloud y Seguridad",
+    "Strategy": "Estrategia"
+  },
+  "articles": [
+    {
+      "id": "rag-financial",
+      "category": "IA y ML",
+      "title": "Escalando RAG e IA Autónoma en Entornos Regulatorios",
+      "excerpt": "Cómo las instituciones financieras empresariales integran la generación aumentada por recuperación sin vulnerar el cumplimiento de datos ni exponer modelos internos.",
+      "readTime": "Lectura de 6 min",
+      "date": "Julio 2026",
+      "tag": "Whitepaper"
+    },
+    {
+      "id": "zero-trust-cloud",
+      "category": "Cloud y Seguridad",
+      "title": "Planos de Arquitectura Cloud de Confianza Cero para 2026",
+      "excerpt": "Un marco práctico para implementar microperímetros, políticas IAM dinámicas y flujos de datos cifrados en toda la infraestructura multi-cloud.",
+      "readTime": "Lectura de 8 min",
+      "date": "Junio 2026",
+      "tag": "Guía de Arquitectura"
+    },
+    {
+      "id": "event-microservices",
+      "category": "Estrategia",
+      "title": "Latencia Sub-10ms: Microservicios Orientados a Eventos en la Práctica",
+      "excerpt": "Desacoplando monolitos en flujos de alto rendimiento con Kafka y WebSockets para lograr una sincronización de estado global casi instantánea.",
+      "readTime": "Lectura de 5 min",
+      "date": "Mayo 2026",
+      "tag": "Caso de Estudio Técnico"
+    },
+    {
+      "id": "automation-roi",
+      "category": "IA y ML",
+      "title": "Calculando el ROI Real de la Automatización Empresarial",
+      "excerpt": "Métricas clave y modelos financieros que los equipos ejecutivos usan para evaluar las inversiones en automatización robótica de procesos antes del despliegue completo.",
+      "readTime": "Lectura de 7 min",
+      "date": "Mayo 2026",
+      "tag": "Briefing Ejecutivo"
+    }
+  ],
+  "readFullArticle": "Leer el artículo completo",
+  "detailBullets": [
+    "Análisis integral de los impactos arquitectónicos empresariales",
+    "Planos de implementación prácticos y referencias de código",
+    "Estrategias de mitigación de riesgos para plataformas cloud a gran escala",
+    "Métricas comparadas de despliegues empresariales reales"
+  ],
+  "primaryAction": "Discutir el artículo con un arquitecto",
+  "categoryPrefix": "Liderazgo de Pensamiento"
+}

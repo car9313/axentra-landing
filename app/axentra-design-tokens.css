@@ -12,7 +12,6 @@
   --color-axentra-mist:  #f7faff; /* fondos claros de sección, cards light */
   --color-axentra-orange: #F4701F; /* acento producto Amauta */
   --color-axentra-gray:  #687280; /* texto secundario, subtítulos, metadata */
-  --color-axentra-section-title: var(--color-axentra-gray); /* #687280 — títulos de sección */
 
   /* ── Typography ────────────────────────────────────────── */
   --font-display: "Archivo", "Archivo Fallback", sans-serif; /* titulares, wordmark */

@@ -4,6 +4,8 @@ import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { X, CheckCircle2, ArrowRight } from "lucide-react";
 
+import { useLanguage } from "@/lib/locale/hooks/useLanguage";
+
 export interface DetailContent {
   title: string;
   category: string;
@@ -22,6 +24,7 @@ interface DetailModalProps {
 }
 
 export function DetailModal({ content, onClose }: DetailModalProps) {
+  const { t } = useLanguage();
   const dialogRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -60,7 +63,7 @@ export function DetailModal({ content, onClose }: DetailModalProps) {
         <button
           onClick={onClose}
           className="absolute top-5 right-5 p-2 text-[var(--color-axentra-gray)] hover:text-[var(--color-axentra-navy)] rounded-full hover:bg-[var(--color-axentra-mist)] transition-colors"
-          aria-label="Close modal"
+          aria-label={t("modals:contactModal.close")}
         >
           <X size={20} />
         </button>
@@ -102,7 +105,7 @@ export function DetailModal({ content, onClose }: DetailModalProps) {
           {content.bullets && content.bullets.length > 0 && (
             <div className="space-y-2 pt-1">
               <h4 className="text-xs font-semibold text-[var(--color-axentra-navy)] uppercase tracking-wider font-body">
-                Key Features & Architectural Deliverables
+                {t("modals:detailModal.featuresTitle")}
               </h4>
               <ul className="space-y-2">
                 {content.bullets.map((b, idx) => (
@@ -120,7 +123,7 @@ export function DetailModal({ content, onClose }: DetailModalProps) {
               onClick={onClose}
               className="text-sm font-medium text-[var(--color-axentra-gray)] hover:text-[var(--color-axentra-navy)] transition-colors cursor-pointer"
             >
-              Close
+              {t("modals:detailModal.close")}
             </button>
             {content.primaryActionLabel && (content.primaryActionHref || content.onPrimaryAction) && (
               content.primaryActionHref ? (

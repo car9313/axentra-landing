@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
 import { Inter, Archivo } from "next/font/google";
+import { cookies, headers } from "next/headers";
+
 import "./globals.css";
+
+import LocaleProvider from "@/app/components/locale/LocaleProvider";
+import { SkipLink } from "@/app/components/locale/SkipLink";
+import {
+  DEFAULT_LOCALE,
+  COOKIE_KEY,
+  I18N_LOCALE_HEADER,
+} from "@/lib/locale/domain/locale.constants";
+import { SUPPORTED_LOCALES } from "@/lib/locale/domain/locale.config";
+import type { LocaleId } from "@/lib/locale/domain/locale.types";
+import { getMetadataForLocale } from "@/lib/locale/server/server-metadata";
 
 const inter = Inter({
   variable: "--font-body",
@@ -13,36 +26,59 @@ const archivo = Archivo({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-export const metadata: Metadata = {
-  title: "Axentra Systems — Where Intelligence Becomes Architecture",
-  description:
-    "Technology consulting, intelligent software, AI & automation, and cloud platforms for enterprises.",
-  icons: [
-    { rel: "icon", url: "/favicon/favicon.ico" },
-    { rel: "icon", type: "image/svg+xml", url: "/favicon/favicon.svg" },
-    { rel: "apple-touch-icon", url: "/favicon/apple-touch-icon.png" },
-  ],
-  manifest: "/favicon/site.webmanifest",
-};
+async function resolveServerLocale(): Promise<LocaleId> {
+  const headerLocale = (await headers()).get(I18N_LOCALE_HEADER);
+  if (
+    headerLocale &&
+    SUPPORTED_LOCALES.some((locale) => locale.id === headerLocale)
+  ) {
+    return headerLocale as LocaleId;
+  }
 
-export default function RootLayout({
+  const cookieLocale = (await cookies()).get(COOKIE_KEY)?.value;
+  if (
+    cookieLocale &&
+    SUPPORTED_LOCALES.some((locale) => locale.id === cookieLocale)
+  ) {
+    return cookieLocale as LocaleId;
+  }
+
+  return DEFAULT_LOCALE;
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await resolveServerLocale();
+  const metadata = getMetadataForLocale(locale);
+
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    icons: [
+      { rel: "icon", url: "/favicon/favicon.ico" },
+      { rel: "icon", type: "image/svg+xml", url: "/favicon/favicon.svg" },
+      { rel: "apple-touch-icon", url: "/favicon/apple-touch-icon.png" },
+    ],
+    manifest: "/favicon/site.webmanifest",
+  };
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await resolveServerLocale();
+
   return (
     <html
-      lang="en"
+      lang={locale}
       className={`${inter.variable} ${archivo.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[var(--color-axentra-blue)] focus:text-white focus:rounded-[8px] focus:text-sm focus:font-semibold focus:outline-none"
-        >
-          Skip to main content
-        </a>
-        {children}
+        <LocaleProvider>
+          <SkipLink />
+          {children}
+        </LocaleProvider>
       </body>
     </html>
   );

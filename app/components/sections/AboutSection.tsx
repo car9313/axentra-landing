@@ -4,63 +4,42 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { ShieldCheck, Cpu, Layers, Target } from "lucide-react";
 
+import { useLanguage } from "@/lib/locale/hooks/useLanguage";
+import { SectionHeader } from "@/app/components/ui/SectionHeader";
+
 export function AboutSection() {
   const [activeTab, setActiveTab] = useState<"mission" | "values" | "architecture">("mission");
+  const { t } = useLanguage();
 
-  const stats = [
-    { label: "Enterprise Architectures", value: "180+" },
-    { label: "System Uptime SLA", value: "99.99%" },
-    { label: "Global Markets Served", value: "14" },
-    { label: "Client Retention Rate", value: "98%" },
-  ];
+  const stats = t("about:stats", { returnObjects: true }) as unknown as {
+    label: string;
+    value: string;
+  }[];
 
-  const pillars = [
-    {
-      icon: <Layers size={24} className="text-[var(--color-axentra-blue)]" />,
-      title: "Scalable Systems",
-      desc: "Resilient event-driven microservices engineered for zero downtime.",
-    },
-    {
-      icon: <Cpu size={24} className="text-[var(--color-axentra-blue)]" />,
-      title: "Applied Intelligence",
-      desc: "Enterprise AI & autonomous workflows integrated safely into core business logic.",
-    },
-    {
-      icon: <ShieldCheck size={24} className="text-[var(--color-axentra-blue)]" />,
-      title: "Zero-Trust Governance",
-      desc: "SOC2 compliant security frameworks safeguarding confidential corporate assets.",
-    },
-    {
-      icon: <Target size={24} className="text-[var(--color-axentra-blue)]" />,
-      title: "Measurable Impact",
-      desc: "Direct alignment between technical investments and quantifiable ROI.",
-    },
+  const pillars = t("about:pillars", { returnObjects: true }) as unknown as {
+    title: string;
+    desc: string;
+  }[];
+
+  const pillarIcons = [
+    <Layers key="layers" size={24} className="text-[var(--color-axentra-blue)]" />,
+    <Cpu key="cpu" size={24} className="text-[var(--color-axentra-blue)]" />,
+    <ShieldCheck key="shield" size={24} className="text-[var(--color-axentra-blue)]" />,
+    <Target key="target" size={24} className="text-[var(--color-axentra-blue)]" />,
   ];
 
   return (
     <section id="about" className="bg-[var(--color-axentra-mist)] py-16 md:py-24 border-t border-[var(--color-axentra-mist)] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12 md:mb-16 space-y-2"
-        >
-          <span className="font-body text-[var(--color-axentra-blue)] font-semibold tracking-[0.1em] text-sm uppercase">
-            ABOUT AXENTRA SYSTEMS
-          </span>
-          <h2 className="font-display font-bold text-3xl sm:text-4xl text-[var(--color-axentra-navy)]">
-            Where Intelligence Becomes Architecture
-          </h2>
-          <p className="font-body text-[var(--color-axentra-gray)] max-w-2xl mx-auto text-base sm:text-lg">
-            Axentra Systems is a B2B technology consulting and platform engineering partner. We transform complex technical challenges into competitive, intelligent assets.
-          </p>
-        </motion.div>
+        <SectionHeader
+          eyebrow={t("about:eyebrow")}
+          title={t("about:title")}
+          description={t("about:description")}
+        />
 
         <div className="max-w-4xl mx-auto mb-12">
-          <div role="tablist" aria-label="About Axentra" className="flex justify-center space-x-2 p-1.5 bg-[var(--color-axentra-mist)] rounded-[10px] max-w-full sm:max-w-md mx-auto">
+          <div role="tablist" aria-label={t("about:tabs.label")} className="flex justify-center space-x-2 p-1.5 bg-[var(--color-axentra-mist)] rounded-[10px] max-w-full sm:max-w-md mx-auto">
             {(["mission", "values", "architecture"] as const).map((tab) => (
               <button
                 key={tab}
@@ -73,9 +52,7 @@ export function AboutSection() {
                     : "text-[var(--color-axentra-gray)] hover:text-[var(--color-axentra-navy)]"
                 }`}
               >
-                {tab === "mission" && "Our Mission"}
-                {tab === "values" && "Core Principles"}
-                {tab === "architecture" && "Methodology"}
+                {t(`about:tabs.${tab}`)}
               </button>
             ))}
           </div>
@@ -91,30 +68,30 @@ export function AboutSection() {
             {activeTab === "mission" && (
               <div className="space-y-3 max-w-2xl mx-auto">
                 <h3 className="font-display font-semibold text-xl text-[var(--color-axentra-navy)]">
-                  Engineering the Enterprise Infrastructure of Tomorrow
+                  {t("about:mission.title")}
                 </h3>
                 <p className="font-body text-[var(--color-axentra-gray)] text-sm sm:text-base leading-relaxed">
-                  We believe true enterprise intelligence isn&apos;t just about adopting isolated tools — it&apos;s about building harmonious, resilient system architectures where data flows seamlessly, processes automate intelligently, and platforms scale infinitely.
+                  {t("about:mission.description")}
                 </p>
               </div>
             )}
             {activeTab === "values" && (
               <div className="space-y-3 max-w-2xl mx-auto">
                 <h3 className="font-display font-semibold text-xl text-[var(--color-axentra-navy)]">
-                  Precision, Reliability, and Absolute Transparency
+                  {t("about:values.title")}
                 </h3>
                 <p className="font-body text-[var(--color-axentra-gray)] text-sm sm:text-base leading-relaxed">
-                  Every line of code and architectural blueprint we produce adheres to rigorous zero-trust benchmarks. We value engineering rigor over hype, delivering platforms built for long-term operational durability.
+                  {t("about:values.description")}
                 </p>
               </div>
             )}
             {activeTab === "architecture" && (
               <div className="space-y-3 max-w-2xl mx-auto">
                 <h3 className="font-display font-semibold text-xl text-[var(--color-axentra-navy)]">
-                  The Axentra Systems Lifecycle
+                  {t("about:architecture.title")}
                 </h3>
                 <p className="font-body text-[var(--color-axentra-gray)] text-sm sm:text-base leading-relaxed">
-                  1. Strategic Architectural Audit → 2. Domain & Data Modeling → 3. High-Throughput Engineering → 4. Automated CI/CD & AI Workflow Integration → 5. Continuous Optimization.
+                  {t("about:architecture.description")}
                 </p>
               </div>
             )}
@@ -133,7 +110,7 @@ export function AboutSection() {
               className="bg-white rounded-[16px] p-6 border border-[var(--color-axentra-mist)] shadow-[0_1px_3px_rgba(10,29,58,0.06)] hover:shadow-[0_6px_20px_rgba(10,29,58,0.10)] transition-all"
             >
               <div className="w-12 h-12 rounded-[10px] bg-[var(--color-axentra-mist)] flex items-center justify-center mb-4">
-                {pillar.icon}
+                {pillarIcons[idx]}
               </div>
               <h4 className="font-display font-semibold text-lg text-[var(--color-axentra-navy)] mb-2">
                 {pillar.title}

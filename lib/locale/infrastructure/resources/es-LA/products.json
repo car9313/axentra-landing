@@ -1,0 +1,64 @@
+{
+  "eyebrow": "PRODUCTOS DE AXENTRA SYSTEMS",
+  "title": "Tecnología propia que impulsa tu crecimiento",
+  "description": "Amauta y Kallap: dos productos de Axentra Systems diseñados para acelerar el aprendizaje y las oportunidades profesionales en tu organización.",
+  "amauta": {
+    "name": "Amauta",
+    "mascotAlt": "Mascota Amauta",
+    "tagline": "Una forma más inteligente de crecer",
+    "badge": "Producto de Aprendizaje Adaptativo"
+  },
+  "kallap": {
+    "name": "Kallap",
+    "tagline": "Los sueños se convierten en dirección",
+    "badge": "Producto de Oportunidades Profesionales"
+  },
+  "details": {
+    "amauta": {
+      "category": "Suite de Productos",
+      "title": "Amauta",
+      "subtitle": "Una Forma Más Inteligente de Crecer — Producto de Aprendizaje Adaptativo",
+      "description": "Amauta es la plataforma insignia de aprendizaje adaptativo de Axentra Systems, diseñada para la mejora de habilidades empresariales y la síntesis de conocimiento organizacional. Impulsada por modelos de ML cognitivos, Amauta ajusta dinámicamente las rutas de habilidades según los datos de desempeño de los colaboradores.",
+      "bullets": [
+        "Mapeo Adaptativo de Competencias y Grafos de Habilidades",
+        "Tutor de IA Generativa y Escenarios de Práctica Contextual",
+        "API de Integración con HRIS y LMS Empresariales",
+        "Analítica de Brechas de Habilidades en Tiempo Real para Equipos Ejecutivos"
+      ],
+      "metrics": [
+        {
+          "label": "Tasa de Retención",
+          "value": "3.2x"
+        },
+        {
+          "label": "Tiempo hasta la Competencia",
+          "value": "-45%"
+        }
+      ],
+      "primaryAction": "Visitar Amauta"
+    },
+    "kallap": {
+      "category": "Suite de Productos",
+      "title": "Kallap",
+      "subtitle": "Los Sueños se Convierten en Dirección — Producto de Oportunidades Profesionales",
+      "description": "Kallap conecta el potencial del talento con las oportunidades empresariales. Mediante algoritmos de emparejamiento inteligente y mapeo de trayectorias profesionales, Kallap vincula a los profesionales con roles de alto impacto dentro de empresas líderes.",
+      "bullets": [
+        "Motor de Emparejamiento por Vector de Talento con IA",
+        "Trayectoria Profesional Predictiva y Analítica de Promociones",
+        "Movilidad Interna y Asignación de Proyectos Interfuncionales",
+        "Métricas de Evaluación de Habilidades Diversas y Equitativas"
+      ],
+      "metrics": [
+        {
+          "label": "Precisión de Emparejamiento",
+          "value": "94%"
+        },
+        {
+          "label": "Movilidad Interna",
+          "value": "+50%"
+        }
+      ],
+      "primaryAction": "Visitar Kallap"
+    }
+  }
+}

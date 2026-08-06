@@ -1,0 +1,52 @@
+{
+  "eyebrow": "PRODUCTS BY AXENTRA SYSTEMS",
+  "title": "Technology built for your growth",
+  "description": "Amauta and Kallap: two Axentra Systems products designed to accelerate learning and career opportunities in your organization.",
+  "amauta": {
+    "name": "Amauta",
+    "mascotAlt": "Amauta Mascot",
+    "tagline": "A smarter way to grow",
+    "badge": "Adaptive Learning Product"
+  },
+  "kallap": {
+    "name": "Kallap",
+    "tagline": "Dreams become direction",
+    "badge": "Career Opportunity Product"
+  },
+  "details": {
+    "amauta": {
+      "category": "Product Suite",
+      "title": "Amauta",
+      "subtitle": "A Smarter Way to Grow — Adaptive Learning Product",
+      "description": "Amauta is Axentra Systems flagship adaptive learning platform engineered for enterprise upskilling and organizational knowledge synthesis. Powered by cognitive ML models, Amauta dynamically adjusts skill pathways based on employee performance data.",
+      "bullets": [
+        "Adaptive Competency Mapping & Skill Graphs",
+        "Generative AI Tutor & Contextual Practice Scenarios",
+        "Enterprise HRIS & LMS Integration API",
+        "Real-time Skill Gap Analytics for Executive Teams"
+      ],
+      "metrics": [
+        { "label": "Retention Rate", "value": "3.2x" },
+        { "label": "Time to Competency", "value": "-45%" }
+      ],
+      "primaryAction": "Visit Amauta"
+    },
+    "kallap": {
+      "category": "Product Suite",
+      "title": "Kallap",
+      "subtitle": "Dreams Become Direction — Career Opportunity Product",
+      "description": "Kallap bridges talent potential with enterprise opportunities. Using intelligent matching algorithms and career path trajectory mapping, Kallap connects professionals with high-impact roles and growth trajectories inside leading enterprises.",
+      "bullets": [
+        "AI-Powered Talent Vector Matching Engine",
+        "Predictive Career Trajectory & Promotion Analytics",
+        "Internal Mobility & Cross-Functional Project Staffing",
+        "Diversity & Equitable Skills Assessment Metrics"
+      ],
+      "metrics": [
+        { "label": "Match Precision", "value": "94%" },
+        { "label": "Internal Mobility", "value": "+50%" }
+      ],
+      "primaryAction": "Visit Kallap"
+    }
+  }
+}

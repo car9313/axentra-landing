@@ -1,0 +1,472 @@
+{
+  "common": {
+    "tagline": "Donde la inteligencia se convierte en arquitectura",
+    "skipToContent": "Ir al contenido principal",
+    "getInTouch": "Contactar",
+    "learnMore": "Más información",
+    "readCaseStudy": "Leer el caso de estudio",
+    "readFullArticle": "Leer el artículo completo",
+    "close": "Cerrar",
+    "ctaTitle": "Diseñemos juntos el futuro.",
+    "ctaDescription": "Agenda una consulta con nuestros expertos."
+  },
+  "navigation": {
+    "services": "Servicios",
+    "products": "Productos",
+    "caseStudies": "Casos de estudio",
+    "about": "Nosotros",
+    "insights": "Perspectivas",
+    "contact": "Contacto",
+    "toggleMenu": "Alternar menú de navegación",
+    "changeLanguage": "Cambiar idioma",
+    "availableLanguages": "Idiomas disponibles",
+    "system": "SYSTEMS"
+  },
+  "hero": {
+    "eyebrowLine1": "DONDE LA INTELIGENCIA",
+    "eyebrowLine2": "SE CONVIERTE EN ARQUITECTURA",
+    "title1": "Consultoría tecnológica.",
+    "title2": "Soluciones inteligentes.",
+    "title3": "Impacto medible.",
+    "description": "Ayudamos a las organizaciones a construir el futuro con inteligencia, automatización y plataformas escalables.",
+    "cta": "Construyamos tu ventaja",
+    "illustrationAlt": "Ilustración de la red de Axentra"
+  },
+  "services": {
+    "eyebrow": "NUESTROS SERVICIOS",
+    "items": [
+      {
+        "id": "consulting",
+        "title": "Consultoría tecnológica",
+        "description": "Estrategia, arquitectura y transformación digital."
+      },
+      {
+        "id": "software",
+        "title": "Software inteligente",
+        "description": "Software personalizado diseñado para resultados."
+      },
+      {
+        "id": "ai-automation",
+        "title": "IA y Automatización",
+        "description": "Soluciones impulsadas por IA y automatización de procesos."
+      },
+      {
+        "id": "cloud-data",
+        "title": "Cloud, Datos y Plataformas",
+        "description": "Plataformas cloud modernas, datos e integración."
+      }
+    ],
+    "learnMore": "Más información",
+    "exploreAll": "Explorar todos los servicios",
+    "detail": {
+      "consulting": {
+        "category": "Nuestros Servicios",
+        "title": "Consultoría tecnológica",
+        "subtitle": "Estrategia, Arquitectura y Transformación Digital",
+        "description": "Nos aliamos con los equipos ejecutivos empresariales para definir hojas de ruta tecnológicas claras y de alto impacto. Desde la reducción de deuda técnica hasta la gobernanza cloud moderna, alineamos la arquitectura de sistemas con los resultados de negocio.",
+        "bullets": [
+          "Auditorías de Arquitectura Empresarial y Modernización",
+          "Gobernanza Cloud y Estrategia Multi-Cloud",
+          "Hojas de Ruta de Factibilidad e Integración de IA",
+          "Refactorización y Desacoplamiento de Sistemas Legados"
+        ],
+        "metrics": [
+          { "label": "Aumento Promedio de Eficiencia", "value": "40%" },
+          { "label": "Plazo de Retorno de Inversión", "value": "< 6 meses" }
+        ],
+        "primaryAction": "Consultar con expertos"
+      },
+      "software": {
+        "category": "Nuestros Servicios",
+        "title": "Software inteligente",
+        "subtitle": "Software Personalizado Diseñado para Resultados a Gran Escala",
+        "description": "Nuestros equipos de ingeniería crean soluciones de software de misión crítica diseñadas para seguridad, latencia ultrabaja y escalabilidad horizontal sin esfuerzo.",
+        "bullets": [
+          "Arquitectura de Microservicios Orientada a Eventos",
+          "Ingeniería de API Gateways de Alto Rendimiento",
+          "Procesamiento y Analítica de Datos en Tiempo Real",
+          "Integración Integral de Sistemas Empresariales"
+        ],
+        "metrics": [
+          { "label": "SLA de Disponibilidad del Sistema", "value": "99.99%" },
+          { "label": "Latencia de Respuesta", "value": "< 50 ms" }
+        ],
+        "primaryAction": "Desarrollar software a medida"
+      },
+      "ai-automation": {
+        "category": "Nuestros Servicios",
+        "title": "IA y Automatización",
+        "subtitle": "Automatización de Procesos con IA e Inteligencia Autónoma",
+        "description": "Libera la productividad atrapada en tu organización. Desplegamos modelos de aprendizaje automático personalizados, motores de generación aumentada por recuperación (RAG) y flujos de automatización robótica de procesos (RPA).",
+        "bullets": [
+          "Ajuste Fino de LLM Personalizados y Pipelines RAG",
+          "Extracción Inteligente de Documentos y Datos",
+          "Motores de Flujos de Trabajo Predictivos Automatizados",
+          "Integración de Enjambres de Agentes Autónomos"
+        ],
+        "metrics": [
+          { "label": "Esfuerzo Manual Ahorrado", "value": "60%+" },
+          { "label": "Mejora en Precisión", "value": "99.5%" }
+        ],
+        "primaryAction": "Desplegar flujos de IA"
+      },
+      "cloud-data": {
+        "category": "Nuestros Servicios",
+        "title": "Cloud, Datos y Plataformas",
+        "subtitle": "Infraestructura Cloud Moderna y Almacenamiento de Datos de Alto Rendimiento",
+        "description": "Optimiza tu stack de datos y moderniza tu infraestructura cloud. Construimos pipelines CI/CD automatizados, perímetros cloud de confianza cero y data lakes de streaming en tiempo real.",
+        "bullets": [
+          "Infraestructura como Código (Terraform, Pulumi)",
+          "Streaming Distribuido (Kafka, Flink, BigQuery)",
+          "Seguridad de Confianza Cero y Cumplimiento SOC2",
+          "Pipelines de Despliegue Kubernetes y Serverless"
+        ],
+        "metrics": [
+          { "label": "Reducción de Costos", "value": "35%" },
+          { "label": "Velocidad de Despliegue", "value": "10x" }
+        ],
+        "primaryAction": "Modernizar la plataforma cloud"
+      }
+    },
+    "exploreAllDetail": {
+      "category": "Resumen de Capacidades",
+      "title": "Matriz de Servicios de Axentra Systems",
+      "subtitle": "Capacidades de Arquitectura B2B de Extremo a Extremo",
+      "description": "Axentra Systems ofrece servicios integrales de consultoría e ingeniería que abarcan desde la evaluación estratégica inicial hasta la implementación de plataformas cloud y la inteligencia continua.",
+      "bullets": [
+        "Consultoría Tecnológica Estratégica y Planificación de Hojas de Ruta",
+        "Desarrollo de Software Inteligente Personalizado",
+        "IA Empresarial y Automatización Robótica de Procesos",
+        "Modernización y Migración de Infraestructura Cloud",
+        "Ingeniería de Datos, Pipelines ETL y Analítica en Tiempo Real",
+        "DevOps, Infraestructura como Código y Seguridad Continua"
+      ],
+      "primaryAction": "Agendar presentación completa de capacidades"
+    }
+  },
+  "products": {
+    "eyebrow": "PRODUCTOS DE AXENTRA SYSTEMS",
+    "amauta": {
+      "name": "Amauta",
+      "mascotAlt": "Mascota Amauta",
+      "tagline": "Una forma más inteligente de crecer",
+      "badge": "Producto de Aprendizaje Adaptativo"
+    },
+    "kallap": {
+      "name": "Kallap",
+      "tagline": "Los sueños se convierten en dirección",
+      "badge": "Producto de Oportunidades Profesionales"
+    },
+    "details": {
+      "amauta": {
+        "category": "Suite de Productos",
+        "title": "Amauta",
+        "subtitle": "Una Forma Más Inteligente de Crecer — Producto de Aprendizaje Adaptativo",
+        "description": "Amauta es la plataforma insignia de aprendizaje adaptativo de Axentra Systems, diseñada para la mejora de habilidades empresariales y la síntesis de conocimiento organizacional. Impulsada por modelos de ML cognitivos, Amauta ajusta dinámicamente las rutas de habilidades según los datos de desempeño de los colaboradores.",
+        "bullets": [
+          "Mapeo Adaptativo de Competencias y Grafos de Habilidades",
+          "Tutor de IA Generativa y Escenarios de Práctica Contextual",
+          "API de Integración con HRIS y LMS Empresariales",
+          "Analítica de Brechas de Habilidades en Tiempo Real para Equipos Ejecutivos"
+        ],
+        "metrics": [
+          { "label": "Tasa de Retención", "value": "3.2x" },
+          { "label": "Tiempo hasta la Competencia", "value": "-45%" }
+        ],
+        "primaryAction": "Visitar Amauta"
+      },
+      "kallap": {
+        "category": "Suite de Productos",
+        "title": "Kallap",
+        "subtitle": "Los Sueños se Convierten en Dirección — Producto de Oportunidades Profesionales",
+        "description": "Kallap conecta el potencial del talento con las oportunidades empresariales. Mediante algoritmos de emparejamiento inteligente y mapeo de trayectorias profesionales, Kallap vincula a los profesionales con roles de alto impacto dentro de empresas líderes.",
+        "bullets": [
+          "Motor de Emparejamiento por Vector de Talento con IA",
+          "Trayectoria Profesional Predictiva y Analítica de Promociones",
+          "Movilidad Interna y Asignación de Proyectos Interfuncionales",
+          "Métricas de Evaluación de Habilidades Diversas y Equitativas"
+        ],
+        "metrics": [
+          { "label": "Precisión de Emparejamiento", "value": "94%" },
+          { "label": "Movilidad Interna", "value": "+50%" }
+        ],
+        "primaryAction": "Visitar Kallap"
+      }
+    }
+  },
+  "caseStudies": {
+    "eyebrow": "CASOS DE ESTUDIO",
+    "readCaseStudy": "Leer el caso de estudio",
+    "items": [
+      {
+        "id": "financial-automation",
+        "title": "Automatización Empresarial para Servicios Financieros",
+        "stat": "Redujo el esfuerzo manual en un 60%.",
+        "clientCategory": "Fintech y Banca",
+        "impactDetail": "Automatizó flujos de cumplimiento complejos, pipelines de agregación de datos y tareas de auditoría de clientes, elevando la precisión operativa al 99.8%."
+      },
+      {
+        "id": "cloud-modernization",
+        "title": "Modernización de Plataforma Cloud",
+        "stat": "Mejoró la escalabilidad y la confiabilidad.",
+        "clientCategory": "Logística Global",
+        "impactDetail": "Migró monolitos legados a una arquitectura moderna de microservicios con cero tiempo de inactividad, reduciendo los costos de infraestructura en un 35% y mejorando la disponibilidad al 99.99%."
+      },
+      {
+        "id": "ai-operations",
+        "title": "Perspectivas Impulsadas por IA para Operaciones",
+        "stat": "Entregó perspectivas accionables a escala.",
+        "clientCategory": "Manufactura Industrial",
+        "impactDetail": "Desplegó algoritmos de mantenimiento predictivo y paneles de telemetría en tiempo real, reduciendo el tiempo de inactividad inesperado del equipo en más de un 45%."
+      }
+    ],
+    "detailBullets": [
+      "Arquitecturó una plataforma empresarial personalizada y escalable",
+      "Eliminó cuellos de botella manuales y silos de datos",
+      "Entregó métricas transparentes en tiempo real y tableros ejecutivos",
+      "Aseguró el cumplimiento total y la migración sin tiempo de inactividad"
+    ],
+    "primaryAction": "Discutir una solución similar",
+    "categoryPrefix": "Caso de Estudio"
+  },
+  "about": {
+    "eyebrow": "ACERCA DE AXENTRA SYSTEMS",
+    "title": "Donde la Inteligencia se Convierte en Arquitectura",
+    "description": "Axentra Systems es un socio de consultoría tecnológica B2B e ingeniería de plataformas. Transformamos desafíos técnicos complejos en activos competitivos e inteligentes.",
+    "tabs": {
+      "mission": "Nuestra Misión",
+      "values": "Principios Fundamentales",
+      "architecture": "Metodología",
+      "label": "Acerca de Axentra"
+    },
+    "mission": {
+      "title": "Ingeniería de la Infraestructura Empresarial del Futuro",
+      "description": "Creemos que la verdadera inteligencia empresarial no consiste solo en adoptar herramientas aisladas, sino en construir arquitecturas de sistemas armoniosas y resilientes donde los datos fluyan sin fricción, los procesos se automaticen de forma inteligente y las plataformas escalen infinitamente."
+    },
+    "values": {
+      "title": "Precisión, Confiabilidad y Transparencia Absoluta",
+      "description": "Cada línea de código y cada plano arquitectónico que producimos cumple con rigurosos estándares de confianza cero. Valoramos el rigor de la ingeniería por encima del ruido, entregando plataformas construidas para una durabilidad operativa a largo plazo."
+    },
+    "architecture": {
+      "title": "El Ciclo de Vida de Axentra Systems",
+      "description": "1. Auditoría Arquitectónica Estratégica → 2. Modelado de Dominio y de Datos → 3. Ingeniería de Alto Rendimiento → 4. Integración de CI/CD Automatizado y Flujos de IA → 5. Optimización Continua."
+    },
+    "pillars": [
+      { "title": "Sistemas Escalables", "desc": "Microservicios resilientes orientados a eventos diseñados para cero tiempo de inactividad." },
+      { "title": "Inteligencia Aplicada", "desc": "IA empresarial y flujos de trabajo autónomos integrados de forma segura en la lógica de negocio central." },
+      { "title": "Gobernanza de Confianza Cero", "desc": "Marcos de seguridad con cumplimiento SOC2 que protegen los activos corporativos confidenciales." },
+      { "title": "Impacto Medible", "desc": "Alineación directa entre las inversiones técnicas y el ROI cuantificable." }
+    ],
+    "stats": [
+      { "label": "Arquitecturas Empresariales", "value": "180+" },
+      { "label": "SLA de Disponibilidad del Sistema", "value": "99.99%" },
+      { "label": "Mercados Globales Atendidos", "value": "14" },
+      { "label": "Tasa de Retención de Clientes", "value": "98%" }
+    ]
+  },
+  "insights": {
+    "eyebrow": "PERSPECTIVAS Y LIDERAZGO DE PENSAMIENTO",
+    "title": "Documentos técnicos y guías de arquitectura",
+    "description": "Análisis experto y planos técnicos seleccionados por los ingenieros líderes de sistemas de Axentra Systems.",
+    "filters": {
+      "All": "Todas",
+      "AI & ML": "IA y ML",
+      "Cloud & Security": "Cloud y Seguridad",
+      "Strategy": "Estrategia"
+    },
+    "articles": [
+      {
+        "id": "rag-financial",
+        "category": "IA y ML",
+        "title": "Escalando RAG e IA Autónoma en Entornos Regulatorios",
+        "excerpt": "Cómo las instituciones financieras empresariales integran la generación aumentada por recuperación sin vulnerar el cumplimiento de datos ni exponer modelos internos.",
+        "readTime": "Lectura de 6 min",
+        "date": "Julio 2026",
+        "tag": "Whitepaper"
+      },
+      {
+        "id": "zero-trust-cloud",
+        "category": "Cloud y Seguridad",
+        "title": "Planos de Arquitectura Cloud de Confianza Cero para 2026",
+        "excerpt": "Un marco práctico para implementar microperímetros, políticas IAM dinámicas y flujos de datos cifrados en toda la infraestructura multi-cloud.",
+        "readTime": "Lectura de 8 min",
+        "date": "Junio 2026",
+        "tag": "Guía de Arquitectura"
+      },
+      {
+        "id": "event-microservices",
+        "category": "Estrategia",
+        "title": "Latencia Sub-10ms: Microservicios Orientados a Eventos en la Práctica",
+        "excerpt": "Desacoplando monolitos en flujos de alto rendimiento con Kafka y WebSockets para lograr una sincronización de estado global casi instantánea.",
+        "readTime": "Lectura de 5 min",
+        "date": "Mayo 2026",
+        "tag": "Caso de Estudio Técnico"
+      },
+      {
+        "id": "automation-roi",
+        "category": "IA y ML",
+        "title": "Calculando el ROI Real de la Automatización Empresarial",
+        "excerpt": "Métricas clave y modelos financieros que los equipos ejecutivos usan para evaluar las inversiones en automatización robótica de procesos antes del despliegue completo.",
+        "readTime": "Lectura de 7 min",
+        "date": "Mayo 2026",
+        "tag": "Briefing Ejecutivo"
+      }
+    ],
+    "readFullArticle": "Leer el artículo completo",
+    "detailBullets": [
+      "Análisis integral de los impactos arquitectónicos empresariales",
+      "Planos de implementación prácticos y referencias de código",
+      "Estrategias de mitigación de riesgos para plataformas cloud a gran escala",
+      "Métricas comparadas de despliegues empresariales reales"
+    ],
+    "primaryAction": "Discutir el artículo con un arquitecto",
+    "categoryPrefix": "Liderazgo de Pensamiento"
+  },
+  "contact": {
+    "eyebrow": "CONTACTO DIRECTO Y COMPROMISO",
+    "title": "Diseñar tu futuro comienza aquí",
+    "description": "Comunícate directamente para conectar con un consultor principal de tecnología de Axentra Systems.",
+    "hubTitle": "Centro de Contacto Empresarial",
+    "hubDescription": "Ya sea que necesites una auditoría completa de arquitectura empresarial, una integración de IA personalizada o ingeniería de plataformas a gran escala, nuestros especialistas responden en 24 horas.",
+    "emailLabel": "Consulta por Email",
+    "email": "info@axentra.systems",
+    "footprintLabel": "Presencia Global",
+    "company": "Axentra Systems LLC",
+    "responseLabel": "SLA de Respuesta",
+    "responseValue": "Respuesta Empresarial Garantizada en 24 Horas",
+    "nda": "Todas las comunicaciones estrictamente sujetas a NDA y privacidad SOC2",
+    "nameLabel": "Tu Nombre *",
+    "namePlaceholder": "Juan Pérez",
+    "emailLabel2": "Email Corporativo *",
+    "emailPlaceholder": "juan@empresa.com",
+    "organizationLabel": "Organización / Empresa",
+    "organizationPlaceholder": "Acme Global S.A.",
+    "capabilityLabel": "Enfoque de Capacidad Principal",
+    "capabilities": [
+      "Consultoría tecnológica",
+      "Software inteligente",
+      "IA y Automatización",
+      "Cloud, Datos y Plataformas",
+      "Amauta - Aprendizaje adaptativo",
+      "Kallap - Oportunidades profesionales"
+    ],
+    "messageLabel": "Detalles del Proyecto o de la Consulta",
+    "messagePlaceholder": "Describe tu arquitectura de sistemas actual, objetivos o cronograma...",
+    "submit": "Enviar Consulta Estratégica",
+    "successTitle": "Consulta Recibida con Éxito",
+    "successMessage": "Gracias, {{name}}. Un arquitecto líder de Axentra Systems revisará tu resumen de proyecto y responderá dentro de 24 horas hábiles.",
+    "valuedPartner": "valioso socio",
+    "sendAnother": "Enviar otro mensaje"
+  },
+  "footer": {
+    "description": "Potenciamos a las empresas con arquitectura inteligente, sistemas automatizados y plataformas cloud escalables.",
+    "companyTitle": "Compañía",
+    "aboutUs": "Nosotros",
+    "careers": "Carreras",
+    "partners": "Aliados",
+    "resourcesTitle": "Recursos",
+    "insights": "Perspectivas",
+    "caseStudies": "Casos de estudio",
+    "blog": "Blog",
+    "connectTitle": "Conectar",
+    "contactUs": "Contáctanos",
+    "email": "info@axentra.systems",
+    "website": "axentra.systems",
+    "rights": "© 2025 Axentra Systems LLC. Todos los derechos reservados.",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos del Servicio",
+    "security": "Seguridad"
+  },
+  "modals": {
+    "contactModal": {
+      "ariaLabel": "Formulario de contacto",
+      "close": "Cerrar modal",
+      "eyebrow": "CONTACTO",
+      "title": "Arquitectemos Tu Próximo Proyecto",
+      "description": "Completa el formulario y nuestros especialistas en tecnología empresarial te contactarán en 24 horas.",
+      "nameLabel": "Nombre Completo *",
+      "namePlaceholder": "Juan Pérez",
+      "emailLabel": "Email Corporativo *",
+      "emailPlaceholder": "juan@empresa.com",
+      "companyLabel": "Organización / Empresa",
+      "companyPlaceholder": "Acme Corp",
+      "capabilityLabel": "Capacidad Principal Necesaria",
+      "capabilities": [
+        "Consultoría tecnológica",
+        "Software inteligente",
+        "IA y Automatización",
+        "Cloud, Datos y Plataformas",
+        "Amauta - Aprendizaje adaptativo",
+        "Kallap - Oportunidades profesionales"
+      ],
+      "messageLabel": "Resumen del Proyecto o Alcance",
+      "messagePlaceholder": "Describe brevemente tus objetivos, cronograma o desafíos técnicos clave...",
+      "submit": "Enviar Consulta",
+      "thankYouTitle": "¡Gracias, {{name}}!",
+      "friend": "Amigo",
+      "successMessage": "Tu consulta sobre {{interest}} ha sido recibida. Un consultor de Axentra Systems se comunicará contigo en breve.",
+      "backToSite": "Volver al sitio"
+    },
+    "detailModal": {
+      "close": "Cerrar",
+      "featuresTitle": "Características Clave y Entregables Arquitectónicos"
+    },
+    "caseStudyCategory": "Caso de Estudio • {{category}}",
+    "caseStudySubject": "Consulta de Caso de Estudio: {{title}}",
+    "insightCategory": "Liderazgo de Pensamiento • {{category}}",
+    "insightSubject": "Discusión de Perspectiva: {{title}}",
+    "subjectFullCapabilities": "Briefing de Capacidades Completas",
+    "subjectCareer": "Solicitud de Empleo",
+    "footerSections": {
+      "careers": {
+        "category": "Únete a Nuestro Equipo",
+        "title": "Carreras en Axentra Systems",
+        "subtitle": "Construye el Futuro de la Tecnología Empresarial",
+        "description": "Siempre buscamos arquitectos de software excepcionales, ingenieros de IA, especialistas en infraestructura cloud y estrategas técnicos.",
+        "bullets": [
+          "Arquitecto Cloud Principal (Remoto)",
+          "Especialista Senior en Machine Learning / RAG",
+          "Ingeniero Líder de Sistemas Full-Stack (TypeScript/React/Node)"
+        ],
+        "primaryAction": "Enviar perfil de candidato"
+      },
+      "partners": {
+        "category": "Ecosistema",
+        "title": "Red de Aliados de Axentra Systems",
+        "subtitle": "Aliados Estratégicos de Tecnología",
+        "description": "Colaboramos estrechamente con los principales proveedores de cloud e instituciones de investigación en IA para entregar soluciones de vanguardia.",
+        "bullets": [
+          "Socio Premier de Google Cloud",
+          "Socio Consultor Avanzado de AWS",
+          "Alianza Empresarial de IA"
+        ]
+      },
+      "blog": {
+        "category": "Publicaciones",
+        "title": "Blog de Ingeniería",
+        "subtitle": "Artículos Técnicos y Desgloses de Casos",
+        "description": "Análisis profundos escritos directamente por nuestros arquitectos de software líderes e ingenieros de datos sobre la construcción de plataformas resilientes.",
+        "bullets": [
+          "Construyendo Arquitecturas React y Node de Alto Rendimiento",
+          "Optimizando la Latencia de Microservicios a < 10 ms"
+        ]
+      },
+      "privacy": {
+        "category": "Legal y Cumplimiento",
+        "title": "Política de Privacidad",
+        "description": "Axentra Systems LLC está comprometida con la protección de los datos de usuarios y clientes. Cumplimos estrictamente con las leyes globales de protección de datos, incluyendo GDPR y CCPA."
+      },
+      "terms": {
+        "category": "Legal y Cumplimiento",
+        "title": "Términos del Servicio",
+        "description": "Al acceder a los servicios o sitios web de Axentra Systems, aceptas cumplir con nuestros términos y condiciones de servicios empresariales."
+      },
+      "security": {
+        "category": "Confianza y Gobernanza",
+        "title": "Seguridad y Cumplimiento",
+        "subtitle": "Arquitectura Certificada SOC 2 Tipo II",
+        "description": "Incorporamos principios arquitectónicos de confianza cero en cada entregable de ingeniería. Todos los códigos y configuraciones de infraestructura pasan por análisis estáticos rigurosos y pruebas de penetración."
+      }
+    }
+  }
+}

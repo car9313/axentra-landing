@@ -1,0 +1,37 @@
+{
+  "eyebrow": "CASOS DE ESTUDIO",
+  "title": "Resultados que hablan por sí solos",
+  "description": "El impacto real de la ingeniería de plataformas y la IA, aplicado en las operaciones de nuestros clientes.",
+  "readCaseStudy": "Leer el caso de estudio",
+  "items": [
+    {
+      "id": "financial-automation",
+      "title": "Automatización Empresarial para Servicios Financieros",
+      "stat": "Redujo el esfuerzo manual en un 60%.",
+      "clientCategory": "Fintech y Banca",
+      "impactDetail": "Automatizó flujos de cumplimiento complejos, pipelines de agregación de datos y tareas de auditoría de clientes, elevando la precisión operativa al 99.8%."
+    },
+    {
+      "id": "cloud-modernization",
+      "title": "Modernización de Plataforma Cloud",
+      "stat": "Mejoró la escalabilidad y la confiabilidad.",
+      "clientCategory": "Logística Global",
+      "impactDetail": "Migró monolitos legados a una arquitectura moderna de microservicios con cero tiempo de inactividad, reduciendo los costos de infraestructura en un 35% y mejorando la disponibilidad al 99.99%."
+    },
+    {
+      "id": "ai-operations",
+      "title": "Perspectivas Impulsadas por IA para Operaciones",
+      "stat": "Entregó perspectivas accionables a escala.",
+      "clientCategory": "Manufactura Industrial",
+      "impactDetail": "Desplegó algoritmos de mantenimiento predictivo y paneles de telemetría en tiempo real, reduciendo el tiempo de inactividad inesperado del equipo en más de un 45%."
+    }
+  ],
+  "detailBullets": [
+    "Arquitecturó una plataforma empresarial personalizada y escalable",
+    "Eliminó cuellos de botella manuales y silos de datos",
+    "Entregó métricas transparentes en tiempo real y tableros ejecutivos",
+    "Aseguró el cumplimiento total y la migración sin tiempo de inactividad"
+  ],
+  "primaryAction": "Discutir una solución similar",
+  "categoryPrefix": "Caso de Estudio"
+}

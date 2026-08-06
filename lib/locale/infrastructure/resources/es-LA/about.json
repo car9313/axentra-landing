@@ -1,0 +1,59 @@
+{
+  "eyebrow": "ACERCA DE AXENTRA SYSTEMS",
+  "title": "Donde la Inteligencia se Convierte en Arquitectura",
+  "description": "Axentra Systems es un socio de consultoría tecnológica B2B e ingeniería de plataformas. Transformamos desafíos técnicos complejos en activos competitivos e inteligentes.",
+  "tabs": {
+    "mission": "Nuestra Misión",
+    "values": "Principios Fundamentales",
+    "architecture": "Metodología",
+    "label": "Acerca de Axentra"
+  },
+  "mission": {
+    "title": "Ingeniería de la Infraestructura Empresarial del Futuro",
+    "description": "Creemos que la verdadera inteligencia empresarial no consiste solo en adoptar herramientas aisladas, sino en construir arquitecturas de sistemas armoniosas y resilientes donde los datos fluyan sin fricción, los procesos se automaticen de forma inteligente y las plataformas escalen infinitamente."
+  },
+  "values": {
+    "title": "Precisión, Confiabilidad y Transparencia Absoluta",
+    "description": "Cada línea de código y cada plano arquitectónico que producimos cumple con rigurosos estándares de confianza cero. Valoramos el rigor de la ingeniería por encima del ruido, entregando plataformas construidas para una durabilidad operativa a largo plazo."
+  },
+  "architecture": {
+    "title": "El Ciclo de Vida de Axentra Systems",
+    "description": "1. Auditoría Arquitectónica Estratégica → 2. Modelado de Dominio y de Datos → 3. Ingeniería de Alto Rendimiento → 4. Integración de CI/CD Automatizado y Flujos de IA → 5. Optimización Continua."
+  },
+  "pillars": [
+    {
+      "title": "Sistemas Escalables",
+      "desc": "Microservicios resilientes orientados a eventos diseñados para cero tiempo de inactividad."
+    },
+    {
+      "title": "Inteligencia Aplicada",
+      "desc": "IA empresarial y flujos de trabajo autónomos integrados de forma segura en la lógica de negocio central."
+    },
+    {
+      "title": "Gobernanza de Confianza Cero",
+      "desc": "Marcos de seguridad con cumplimiento SOC2 que protegen los activos corporativos confidenciales."
+    },
+    {
+      "title": "Impacto Medible",
+      "desc": "Alineación directa entre las inversiones técnicas y el ROI cuantificable."
+    }
+  ],
+  "stats": [
+    {
+      "label": "Arquitecturas Empresariales",
+      "value": "180+"
+    },
+    {
+      "label": "SLA de Disponibilidad del Sistema",
+      "value": "99.99%"
+    },
+    {
+      "label": "Mercados Globales Atendidos",
+      "value": "14"
+    },
+    {
+      "label": "Tasa de Retención de Clientes",
+      "value": "98%"
+    }
+  ]
+}

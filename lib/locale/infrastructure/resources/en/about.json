@@ -1,0 +1,35 @@
+{
+  "eyebrow": "ABOUT AXENTRA SYSTEMS",
+  "title": "Where Intelligence Becomes Architecture",
+  "description": "Axentra Systems is a B2B technology consulting and platform engineering partner. We transform complex technical challenges into competitive, intelligent assets.",
+  "tabs": {
+    "mission": "Our Mission",
+    "values": "Core Principles",
+    "architecture": "Methodology",
+    "label": "About Axentra"
+  },
+  "mission": {
+    "title": "Engineering the Enterprise Infrastructure of Tomorrow",
+    "description": "We believe true enterprise intelligence isn't just about adopting isolated tools — it's about building harmonious, resilient system architectures where data flows seamlessly, processes automate intelligently, and platforms scale infinitely."
+  },
+  "values": {
+    "title": "Precision, Reliability, and Absolute Transparency",
+    "description": "Every line of code and architectural blueprint we produce adheres to rigorous zero-trust benchmarks. We value engineering rigor over hype, delivering platforms built for long-term operational durability."
+  },
+  "architecture": {
+    "title": "The Axentra Systems Lifecycle",
+    "description": "1. Strategic Architectural Audit → 2. Domain & Data Modeling → 3. High-Throughput Engineering → 4. Automated CI/CD & AI Workflow Integration → 5. Continuous Optimization."
+  },
+  "pillars": [
+    { "title": "Scalable Systems", "desc": "Resilient event-driven microservices engineered for zero downtime." },
+    { "title": "Applied Intelligence", "desc": "Enterprise AI & autonomous workflows integrated safely into core business logic." },
+    { "title": "Zero-Trust Governance", "desc": "SOC2 compliant security frameworks safeguarding confidential corporate assets." },
+    { "title": "Measurable Impact", "desc": "Direct alignment between technical investments and quantifiable ROI." }
+  ],
+  "stats": [
+    { "label": "Enterprise Architectures", "value": "180+" },
+    { "label": "System Uptime SLA", "value": "99.99%" },
+    { "label": "Global Markets Served", "value": "14" },
+    { "label": "Client Retention Rate", "value": "98%" }
+  ]
+}

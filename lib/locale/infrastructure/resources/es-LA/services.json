@@ -1,0 +1,138 @@
+{
+  "eyebrow": "NUESTROS SERVICIOS",
+  "title": "Soluciones tecnológicas de punta a punta",
+  "description": "Consultoría estratégica, software a medida y automatización con IA para construir tu ventaja competitiva.",
+  "items": [
+    {
+      "id": "consulting",
+      "title": "Consultoría tecnológica",
+      "description": "Estrategia, arquitectura y transformación digital."
+    },
+    {
+      "id": "software",
+      "title": "Software inteligente",
+      "description": "Software personalizado diseñado para resultados."
+    },
+    {
+      "id": "ai-automation",
+      "title": "IA y Automatización",
+      "description": "Soluciones impulsadas por IA y automatización de procesos."
+    },
+    {
+      "id": "cloud-data",
+      "title": "Cloud, Datos y Plataformas",
+      "description": "Plataformas cloud modernas, datos e integración."
+    }
+  ],
+  "learnMore": "Más información",
+  "exploreAll": "Explorar todos los servicios",
+  "detail": {
+    "consulting": {
+      "category": "Nuestros Servicios",
+      "title": "Consultoría tecnológica",
+      "subtitle": "Estrategia, Arquitectura y Transformación Digital",
+      "description": "Nos aliamos con los equipos ejecutivos empresariales para definir hojas de ruta tecnológicas claras y de alto impacto. Desde la reducción de deuda técnica hasta la gobernanza cloud moderna, alineamos la arquitectura de sistemas con los resultados de negocio.",
+      "bullets": [
+        "Auditorías de Arquitectura Empresarial y Modernización",
+        "Gobernanza Cloud y Estrategia Multi-Cloud",
+        "Hojas de Ruta de Factibilidad e Integración de IA",
+        "Refactorización y Desacoplamiento de Sistemas Legados"
+      ],
+      "metrics": [
+        {
+          "label": "Aumento Promedio de Eficiencia",
+          "value": "40%"
+        },
+        {
+          "label": "Plazo de Retorno de Inversión",
+          "value": "< 6 meses"
+        }
+      ],
+      "primaryAction": "Consultar con expertos"
+    },
+    "software": {
+      "category": "Nuestros Servicios",
+      "title": "Software inteligente",
+      "subtitle": "Software Personalizado Diseñado para Resultados a Gran Escala",
+      "description": "Nuestros equipos de ingeniería crean soluciones de software de misión crítica diseñadas para seguridad, latencia ultrabaja y escalabilidad horizontal sin esfuerzo.",
+      "bullets": [
+        "Arquitectura de Microservicios Orientada a Eventos",
+        "Ingeniería de API Gateways de Alto Rendimiento",
+        "Procesamiento y Analítica de Datos en Tiempo Real",
+        "Integración Integral de Sistemas Empresariales"
+      ],
+      "metrics": [
+        {
+          "label": "SLA de Disponibilidad del Sistema",
+          "value": "99.99%"
+        },
+        {
+          "label": "Latencia de Respuesta",
+          "value": "< 50 ms"
+        }
+      ],
+      "primaryAction": "Desarrollar software a medida"
+    },
+    "ai-automation": {
+      "category": "Nuestros Servicios",
+      "title": "IA y Automatización",
+      "subtitle": "Automatización de Procesos con IA e Inteligencia Autónoma",
+      "description": "Libera la productividad atrapada en tu organización. Desplegamos modelos de aprendizaje automático personalizados, motores de generación aumentada por recuperación (RAG) y flujos de automatización robótica de procesos (RPA).",
+      "bullets": [
+        "Ajuste Fino de LLM Personalizados y Pipelines RAG",
+        "Extracción Inteligente de Documentos y Datos",
+        "Motores de Flujos de Trabajo Predictivos Automatizados",
+        "Integración de Enjambres de Agentes Autónomos"
+      ],
+      "metrics": [
+        {
+          "label": "Esfuerzo Manual Ahorrado",
+          "value": "60%+"
+        },
+        {
+          "label": "Mejora en Precisión",
+          "value": "99.5%"
+        }
+      ],
+      "primaryAction": "Desplegar flujos de IA"
+    },
+    "cloud-data": {
+      "category": "Nuestros Servicios",
+      "title": "Cloud, Datos y Plataformas",
+      "subtitle": "Infraestructura Cloud Moderna y Almacenamiento de Datos de Alto Rendimiento",
+      "description": "Optimiza tu stack de datos y moderniza tu infraestructura cloud. Construimos pipelines CI/CD automatizados, perímetros cloud de confianza cero y data lakes de streaming en tiempo real.",
+      "bullets": [
+        "Infraestructura como Código (Terraform, Pulumi)",
+        "Streaming Distribuido (Kafka, Flink, BigQuery)",
+        "Seguridad de Confianza Cero y Cumplimiento SOC2",
+        "Pipelines de Despliegue Kubernetes y Serverless"
+      ],
+      "metrics": [
+        {
+          "label": "Reducción de Costos",
+          "value": "35%"
+        },
+        {
+          "label": "Velocidad de Despliegue",
+          "value": "10x"
+        }
+      ],
+      "primaryAction": "Modernizar la plataforma cloud"
+    }
+  },
+  "exploreAllDetail": {
+    "category": "Resumen de Capacidades",
+    "title": "Matriz de Servicios de Axentra Systems",
+    "subtitle": "Capacidades de Arquitectura B2B de Extremo a Extremo",
+    "description": "Axentra Systems ofrece servicios integrales de consultoría e ingeniería que abarcan desde la evaluación estratégica inicial hasta la implementación de plataformas cloud y la inteligencia continua.",
+    "bullets": [
+      "Consultoría Tecnológica Estratégica y Planificación de Hojas de Ruta",
+      "Desarrollo de Software Inteligente Personalizado",
+      "IA Empresarial y Automatización Robótica de Procesos",
+      "Modernización y Migración de Infraestructura Cloud",
+      "Ingeniería de Datos, Pipelines ETL y Analítica en Tiempo Real",
+      "DevOps, Infraestructura como Código y Seguridad Continua"
+    ],
+    "primaryAction": "Agendar presentación completa de capacidades"
+  }
+}

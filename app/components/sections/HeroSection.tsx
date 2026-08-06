@@ -3,11 +3,14 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 
+import { useLanguage } from "@/lib/locale/hooks/useLanguage";
+
 interface HeroSectionProps {
   onOpenContact: () => void;
 }
 
 export function HeroSection({ onOpenContact }: HeroSectionProps) {
+  const { t } = useLanguage();
   return (
     <section className="relative bg-white pt-8 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-28 overflow-hidden border-b border-[var(--color-axentra-mist)]/60">
 
@@ -32,7 +35,7 @@ export function HeroSection({ onOpenContact }: HeroSectionProps) {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           src="/hero-illustration.png"
-          alt="Axentra network illustration"
+          alt={t("hero:illustrationAlt")}
           loading="eager"
           decoding="async"
           className="w-[135%] max-w-none object-contain translate-x-[6%] select-none"
@@ -54,8 +57,8 @@ export function HeroSection({ onOpenContact }: HeroSectionProps) {
               className="inline-block"
             >
               <span className="font-body text-[var(--color-axentra-blue)] tracking-[0.1em] font-semibold text-sm sm:text-base uppercase leading-snug">
-                WHERE INTELLIGENCE<br />
-                BECOMES ARCHITECTURE
+                {t("hero:eyebrowLine1")}<br />
+                {t("hero:eyebrowLine2")}
               </span>
             </motion.div>
 
@@ -64,9 +67,9 @@ export function HeroSection({ onOpenContact }: HeroSectionProps) {
               transition={{ duration: 0.5, delay: 0.15 }}
               className="font-display text-[28px] sm:text-[44px] md:text-[52px] lg:text-[56px] font-extrabold text-[var(--color-axentra-navy)] leading-[1.12] tracking-tight"
             >
-              Technology Consulting.<br />
-              Intelligent Solutions.<br />
-              <span className="text-[var(--color-axentra-navy)]">Measurable Impact.</span>
+              {t("hero:title1")}<br />
+              {t("hero:title2")}<br />
+              <span className="text-[var(--color-axentra-navy)]">{t("hero:title3")}</span>
             </motion.h1>
 
             <motion.p
@@ -74,7 +77,7 @@ export function HeroSection({ onOpenContact }: HeroSectionProps) {
               transition={{ duration: 0.5, delay: 0.25 }}
               className="font-body text-[var(--color-axentra-gray)] max-w-2xl text-base sm:text-lg md:text-xl font-normal leading-relaxed"
             >
-              We help organizations architect the future with intelligence, automation, and scalable platforms.
+              {t("hero:description")}
             </motion.p>
 
             <motion.div
@@ -86,7 +89,7 @@ export function HeroSection({ onOpenContact }: HeroSectionProps) {
                 onClick={onOpenContact}
                 className="inline-flex items-center justify-center gap-3 bg-[var(--color-axentra-blue)] hover:bg-[#1D4ED8] text-white font-semibold text-base px-7 py-3.5 rounded-[10px] shadow-[0_4px_14px_rgba(37,99,235,0.25)] transition-all duration-200 hover:shadow-[0_6px_20px_rgba(37,99,235,0.35)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
               >
-                <span>Let&apos;s Build Your Advantage</span>
+                <span>{t("hero:cta")}</span>
                 <ArrowRight size={18} />
               </button>
             </motion.div>

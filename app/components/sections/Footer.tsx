@@ -1,11 +1,15 @@
 "use client";
 
+import { LanguageSwitcher } from "@/app/components/locale/LanguageSwitcher";
+import { useLanguage } from "@/lib/locale/hooks/useLanguage";
+
 interface FooterProps {
   onOpenContact: () => void;
   onSelectNav: (sectionId: string) => void;
 }
 
 export function Footer({ onOpenContact, onSelectNav }: FooterProps) {
+  const { t } = useLanguage();
   return (
     <footer className="relative bg-[var(--color-axentra-navy)] text-white pt-16 pb-8 overflow-hidden select-none border-t border-white/10">
 
@@ -56,32 +60,32 @@ export function Footer({ onOpenContact, onSelectNav }: FooterProps) {
                 </span>
               </div>
               <span className="text-xs font-normal text-[var(--color-axentra-mist)]/70 tracking-normal mt-1 font-body">
-                Where Intelligence Becomes Architecture
+                {t("common:tagline")}
               </span>
             </a>
             <p className="text-xs text-[var(--color-axentra-mist)]/60 font-body leading-relaxed max-w-xs">
-              Empowering enterprises with intelligent architecture, automated systems, and scalable cloud platforms.
+              {t("footer:description")}
             </p>
           </div>
 
           <div>
             <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-[var(--color-axentra-sky)] mb-4">
-              Company
+              {t("footer:companyTitle")}
             </h4>
             <ul className="space-y-2.5 text-sm font-body text-[var(--color-axentra-mist)]/80">
               <li>
                 <button onClick={() => onSelectNav("about")} className="hover:text-white transition-colors cursor-pointer">
-                  About Us
+                  {t("footer:aboutUs")}
                 </button>
               </li>
               <li>
                 <button onClick={() => onSelectNav("careers")} className="hover:text-white transition-colors cursor-pointer">
-                  Careers
+                  {t("footer:careers")}
                 </button>
               </li>
               <li>
                 <button onClick={() => onSelectNav("partners")} className="hover:text-white transition-colors cursor-pointer">
-                  Partners
+                  {t("footer:partners")}
                 </button>
               </li>
             </ul>
@@ -89,22 +93,22 @@ export function Footer({ onOpenContact, onSelectNav }: FooterProps) {
 
           <div>
             <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-[var(--color-axentra-sky)] mb-4">
-              Resources
+              {t("footer:resourcesTitle")}
             </h4>
             <ul className="space-y-2.5 text-sm font-body text-[var(--color-axentra-mist)]/80">
               <li>
                 <button onClick={() => onSelectNav("insights")} className="hover:text-white transition-colors cursor-pointer">
-                  Insights
+                  {t("footer:insights")}
                 </button>
               </li>
               <li>
                 <button onClick={() => onSelectNav("case-studies")} className="hover:text-white transition-colors cursor-pointer">
-                  Case Studies
+                  {t("footer:caseStudies")}
                 </button>
               </li>
               <li>
                 <button onClick={() => onSelectNav("blog")} className="hover:text-white transition-colors cursor-pointer">
-                  Blog
+                  {t("footer:blog")}
                 </button>
               </li>
             </ul>
@@ -112,22 +116,22 @@ export function Footer({ onOpenContact, onSelectNav }: FooterProps) {
 
           <div>
             <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-[var(--color-axentra-sky)] mb-4">
-              Connect
+              {t("footer:connectTitle")}
             </h4>
             <ul className="space-y-2.5 text-sm font-body text-[var(--color-axentra-mist)]/80">
               <li>
                 <button onClick={onOpenContact} className="hover:text-white transition-colors cursor-pointer text-left">
-                  Contact Us
+                  {t("footer:contactUs")}
                 </button>
               </li>
               <li>
                 <a href="mailto:info@axentra.systems" className="hover:text-white transition-colors">
-                  info@axentra.systems
+                  {t("footer:email")}
                 </a>
               </li>
               <li>
                 <a href="https://axentra.systems" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  axentra.systems
+                  {t("footer:website")}
                 </a>
               </li>
             </ul>
@@ -136,17 +140,20 @@ export function Footer({ onOpenContact, onSelectNav }: FooterProps) {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-[var(--color-axentra-mist)]/50 font-body gap-4">
-          <p>© 2025 Axentra Systems LLC. All rights reserved.</p>
-          <div className="flex items-center space-x-6">
+          <p>{t("footer:rights")}</p>
+          <div className="flex items-center gap-6">
+            <LanguageSwitcher dark />
+            <div className="flex items-center space-x-6">
             <button onClick={() => onSelectNav("privacy")} className="hover:text-white transition-colors cursor-pointer">
-              Privacy Policy
+              {t("footer:privacyPolicy")}
             </button>
             <button onClick={() => onSelectNav("terms")} className="hover:text-white transition-colors cursor-pointer">
-              Terms of Service
+              {t("footer:termsOfService")}
             </button>
             <button onClick={() => onSelectNav("security")} className="hover:text-white transition-colors cursor-pointer">
-              Security
+              {t("footer:security")}
             </button>
+          </div>
           </div>
         </div>
 

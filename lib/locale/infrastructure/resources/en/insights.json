@@ -1,0 +1,58 @@
+{
+  "eyebrow": "INSIGHTS & THOUGHT LEADERSHIP",
+  "title": "Architectural Whitepapers & Technical Guides",
+  "description": "Expert analysis and technical blueprints curated by Axentra Systems lead systems engineers.",
+  "filters": {
+    "All": "All",
+    "AI & ML": "AI & ML",
+    "Cloud & Security": "Cloud & Security",
+    "Strategy": "Strategy"
+  },
+  "articles": [
+    {
+      "id": "rag-financial",
+      "category": "AI & ML",
+      "title": "Scaling RAG & Autonomous AI in Regulatory Environments",
+      "excerpt": "How enterprise financial institutions integrate retrieval-augmented generation without breaching data compliance or exposing internal models.",
+      "readTime": "6 min read",
+      "date": "July 2026",
+      "tag": "Whitepaper"
+    },
+    {
+      "id": "zero-trust-cloud",
+      "category": "Cloud & Security",
+      "title": "Zero-Trust Cloud Architecture Blueprints for 2026",
+      "excerpt": "A practical framework for implementing micro-perimeters, dynamic IAM policies, and encrypted data streams across multi-cloud infrastructure.",
+      "readTime": "8 min read",
+      "date": "June 2026",
+      "tag": "Architecture Guide"
+    },
+    {
+      "id": "event-microservices",
+      "category": "Strategy",
+      "title": "Sub-10ms Latency: Event-Driven Microservices in Practice",
+      "excerpt": "Decoupling monoliths into high-throughput Kafka and WebSockets streams to achieve near-instantaneous global state synchronization.",
+      "readTime": "5 min read",
+      "date": "May 2026",
+      "tag": "Technical Case Study"
+    },
+    {
+      "id": "automation-roi",
+      "category": "AI & ML",
+      "title": "Calculating the True ROI of Enterprise Automation",
+      "excerpt": "Key metrics and financial models executive teams use to evaluate robotic process automation investments before full deployment.",
+      "readTime": "7 min read",
+      "date": "May 2026",
+      "tag": "Executive Brief"
+    }
+  ],
+  "readFullArticle": "Read Full Article",
+  "detailBullets": [
+    "Comprehensive analysis of enterprise architectural impacts",
+    "Practical implementation blueprints and code references",
+    "Risk mitigation strategies for high-scale cloud platforms",
+    "Benchmarked metrics from real enterprise deployments"
+  ],
+  "primaryAction": "Discuss Article with Architect",
+  "categoryPrefix": "Thought Leadership"
+}

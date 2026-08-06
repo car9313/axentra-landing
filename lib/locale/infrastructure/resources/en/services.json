@@ -1,0 +1,114 @@
+{
+  "eyebrow": "OUR SERVICES",
+  "title": "End-to-end technology solutions",
+  "description": "Strategic consulting, custom software, and AI automation to build your competitive advantage.",
+  "items": [
+    {
+      "id": "consulting",
+      "title": "Technology Consulting",
+      "description": "Strategy, architecture and digital transformation."
+    },
+    {
+      "id": "software",
+      "title": "Intelligent Software",
+      "description": "Custom software engineered for outcomes."
+    },
+    {
+      "id": "ai-automation",
+      "title": "AI & Automation",
+      "description": "AI-powered solutions and process automation."
+    },
+    {
+      "id": "cloud-data",
+      "title": "Cloud, Data & Platforms",
+      "description": "Modern-cloud, data platforms, and integration."
+    }
+  ],
+  "learnMore": "Learn more",
+  "exploreAll": "Explore all services",
+  "detail": {
+    "consulting": {
+      "category": "Our Services",
+      "title": "Technology Consulting",
+      "subtitle": "Strategy, Architecture, and Digital Transformation",
+      "description": "We partner with enterprise executive teams to define clear, high-impact technology roadmaps. From technical debt reduction to modern cloud governance, we align system architecture with core business outcomes.",
+      "bullets": [
+        "Enterprise Architecture Audits & Modernization",
+        "Cloud Governance & Multi-Cloud Strategy",
+        "AI Feasibility & Integration Roadmaps",
+        "Legacy System Refactoring & Decoupling"
+      ],
+      "metrics": [
+        { "label": "Avg Efficiency Boost", "value": "40%" },
+        { "label": "ROI Timeline", "value": "< 6 Mos" }
+      ],
+      "primaryAction": "Consult with Experts"
+    },
+    "software": {
+      "category": "Our Services",
+      "title": "Intelligent Software",
+      "subtitle": "Custom Software Engineered for High-Scale Outcomes",
+      "description": "Our engineering teams craft mission-critical software solutions designed for security, ultra-low latency, and effortless horizontal scalability.",
+      "bullets": [
+        "Event-Driven Microservices Architecture",
+        "High-Throughput API Gateway Engineering",
+        "Real-time Data Processing & Analytics",
+        "End-to-End Enterprise System Integration"
+      ],
+      "metrics": [
+        { "label": "System Uptime SLA", "value": "99.99%" },
+        { "label": "Response Latency", "value": "< 50ms" }
+      ],
+      "primaryAction": "Build Custom Software"
+    },
+    "ai-automation": {
+      "category": "Our Services",
+      "title": "AI & Automation",
+      "subtitle": "AI-Powered Process Automation & Autonomous Intelligence",
+      "description": "Unlock trapped productivity across your organization. We deploy custom machine learning models, retrieval-augmented generation (RAG) engines, and robotic process automation (RPA) workflows.",
+      "bullets": [
+        "Custom LLM Fine-Tuning & RAG Pipelines",
+        "Intelligent Document & Data Extraction",
+        "Automated Predictive Workflow Engines",
+        "Autonomous Agent Swarm Integration"
+      ],
+      "metrics": [
+        { "label": "Manual Effort Saved", "value": "60%+" },
+        { "label": "Accuracy Improvement", "value": "99.5%" }
+      ],
+      "primaryAction": "Deploy AI Workflows"
+    },
+    "cloud-data": {
+      "category": "Our Services",
+      "title": "Cloud, Data & Platforms",
+      "subtitle": "Modern Cloud Infrastructure & High-Performance Data Warehousing",
+      "description": "Streamline your data stack and modernize cloud infrastructure. We build automated CI/CD pipelines, zero-trust cloud perimeters, and real-time streaming data lakes.",
+      "bullets": [
+        "Infrastructure-as-Code (Terraform, Pulumi)",
+        "Distributed Streaming (Kafka, Flink, BigQuery)",
+        "Zero-Trust Security & SOC2 Compliance",
+        "Kubernetes & Serverless Deployment Pipelines"
+      ],
+      "metrics": [
+        { "label": "Cost Reduction", "value": "35%" },
+        { "label": "Deployment Speed", "value": "10x" }
+      ],
+      "primaryAction": "Modernize Cloud Platform"
+    }
+  },
+  "exploreAllDetail": {
+    "category": "Capabilities Overview",
+    "title": "Axentra Systems Service Matrix",
+    "subtitle": "End-to-End B2B Architecture Capabilities",
+    "description": "Axentra Systems delivers end-to-end consulting and engineering services spanning initial strategic assessment to cloud platform implementation and ongoing continuous intelligence.",
+    "bullets": [
+      "Strategic Technology Consulting & Roadmap Planning",
+      "Custom Intelligent Software Development",
+      "Enterprise AI & Robotic Process Automation",
+      "Cloud Infrastructure Modernization & Migration",
+      "Data Engineering, ETL Pipelines & Real-time Analytics",
+      "DevOps, Infrastructure as Code & Continuous Security"
+    ],
+    "primaryAction": "Schedule Full Capabilities Briefing"
+  }
+}

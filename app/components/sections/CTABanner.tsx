@@ -3,11 +3,14 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 
+import { useLanguage } from "@/lib/locale/hooks/useLanguage";
+
 interface CTABannerProps {
   onOpenContact: () => void;
 }
 
 export function CTABanner({ onOpenContact }: CTABannerProps) {
+  const { t } = useLanguage();
   return (
     <section className="bg-[var(--color-axentra-mist)] py-12 md:py-16 border-t border-[var(--color-axentra-mist)]/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,10 +24,10 @@ export function CTABanner({ onOpenContact }: CTABannerProps) {
 
           <div className="space-y-2 max-w-2xl">
             <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl text-[var(--color-axentra-navy)] leading-tight">
-              Let&apos;s architect what&apos;s next—together.
+              {t("common:ctaTitle")}
             </h2>
             <p className="font-body text-[var(--color-axentra-gray)] text-base sm:text-lg font-normal">
-              Book a consultation with our experts.
+              {t("common:ctaDescription")}
             </p>
           </div>
 
@@ -33,7 +36,7 @@ export function CTABanner({ onOpenContact }: CTABannerProps) {
               onClick={onOpenContact}
               className="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-[var(--color-axentra-blue)] hover:bg-[#1D4ED8] text-white font-semibold text-base px-8 py-3.5 rounded-[10px] shadow-[0_1px_3px_rgba(10,29,58,0.06)] transition-all duration-200 hover:shadow-[0_4px_14px_rgba(37,99,235,0.3)] active:scale-[0.98] cursor-pointer"
             >
-              <span>Get in Touch</span>
+              <span>{t("common:getInTouch")}</span>
               <ArrowRight size={18} />
             </button>
           </div>

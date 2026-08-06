@@ -1,0 +1,92 @@
+{
+  "contactModal": {
+    "ariaLabel": "Formulario de contacto",
+    "close": "Cerrar modal",
+    "eyebrow": "CONTACTO",
+    "title": "Arquitectemos Tu Próximo Proyecto",
+    "description": "Completa el formulario y nuestros especialistas en tecnología empresarial te contactarán en 24 horas.",
+    "nameLabel": "Nombre Completo *",
+    "namePlaceholder": "Juan Pérez",
+    "emailLabel": "Email Corporativo *",
+    "emailPlaceholder": "juan@empresa.com",
+    "companyLabel": "Organización / Empresa",
+    "companyPlaceholder": "Acme Corp",
+    "capabilityLabel": "Capacidad Principal Necesaria",
+    "capabilities": [
+      "Consultoría tecnológica",
+      "Software inteligente",
+      "IA y Automatización",
+      "Cloud, Datos y Plataformas",
+      "Amauta - Aprendizaje adaptativo",
+      "Kallap - Oportunidades profesionales"
+    ],
+    "messageLabel": "Resumen del Proyecto o Alcance",
+    "messagePlaceholder": "Describe brevemente tus objetivos, cronograma o desafíos técnicos clave...",
+    "submit": "Enviar Consulta",
+    "thankYouTitle": "¡Gracias, {{name}}!",
+    "friend": "Amigo",
+    "successMessage": "Tu consulta sobre {{interest}} ha sido recibida. Un consultor de Axentra Systems se comunicará contigo en breve.",
+    "backToSite": "Volver al sitio"
+  },
+  "detailModal": {
+    "close": "Cerrar",
+    "featuresTitle": "Características Clave y Entregables Arquitectónicos"
+  },
+  "caseStudyCategory": "Caso de Estudio • {{category}}",
+  "caseStudySubject": "Consulta de Caso de Estudio: {{title}}",
+  "insightCategory": "Liderazgo de Pensamiento • {{category}}",
+  "insightSubject": "Discusión de Perspectiva: {{title}}",
+  "subjectFullCapabilities": "Briefing de Capacidades Completas",
+  "subjectCareer": "Solicitud de Empleo",
+  "footerSections": {
+    "careers": {
+      "category": "Únete a Nuestro Equipo",
+      "title": "Carreras en Axentra Systems",
+      "subtitle": "Construye el Futuro de la Tecnología Empresarial",
+      "description": "Siempre buscamos arquitectos de software excepcionales, ingenieros de IA, especialistas en infraestructura cloud y estrategas técnicos.",
+      "bullets": [
+        "Arquitecto Cloud Principal (Remoto)",
+        "Especialista Senior en Machine Learning / RAG",
+        "Ingeniero Líder de Sistemas Full-Stack (TypeScript/React/Node)"
+      ],
+      "primaryAction": "Enviar perfil de candidato"
+    },
+    "partners": {
+      "category": "Ecosistema",
+      "title": "Red de Aliados de Axentra Systems",
+      "subtitle": "Aliados Estratégicos de Tecnología",
+      "description": "Colaboramos estrechamente con los principales proveedores de cloud e instituciones de investigación en IA para entregar soluciones de vanguardia.",
+      "bullets": [
+        "Socio Premier de Google Cloud",
+        "Socio Consultor Avanzado de AWS",
+        "Alianza Empresarial de IA"
+      ]
+    },
+    "blog": {
+      "category": "Publicaciones",
+      "title": "Blog de Ingeniería",
+      "subtitle": "Artículos Técnicos y Desgloses de Casos",
+      "description": "Análisis profundos escritos directamente por nuestros arquitectos de software líderes e ingenieros de datos sobre la construcción de plataformas resilientes.",
+      "bullets": [
+        "Construyendo Arquitecturas React y Node de Alto Rendimiento",
+        "Optimizando la Latencia de Microservicios a < 10 ms"
+      ]
+    },
+    "privacy": {
+      "category": "Legal y Cumplimiento",
+      "title": "Política de Privacidad",
+      "description": "Axentra Systems LLC está comprometida con la protección de los datos de usuarios y clientes. Cumplimos estrictamente con las leyes globales de protección de datos, incluyendo GDPR y CCPA."
+    },
+    "terms": {
+      "category": "Legal y Cumplimiento",
+      "title": "Términos del Servicio",
+      "description": "Al acceder a los servicios o sitios web de Axentra Systems, aceptas cumplir con nuestros términos y condiciones de servicios empresariales."
+    },
+    "security": {
+      "category": "Confianza y Gobernanza",
+      "title": "Seguridad y Cumplimiento",
+      "subtitle": "Arquitectura Certificada SOC 2 Tipo II",
+      "description": "Incorporamos principios arquitectónicos de confianza cero en cada entregable de ingeniería. Todos los códigos y configuraciones de infraestructura pasan por análisis estáticos rigurosos y pruebas de penetración."
+    }
+  }
+}

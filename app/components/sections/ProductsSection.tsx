@@ -2,33 +2,36 @@
 
 import { motion } from "motion/react";
 
+import { useLanguage } from "@/lib/locale/hooks/useLanguage";
+import { SectionHeader } from "@/app/components/ui/SectionHeader";
+
 
 interface ProductsSectionProps {
   onSelectProduct: (productName: string) => void;
 }
 
 export function ProductsSection({ onSelectProduct }: ProductsSectionProps) {
+  const { t } = useLanguage();
   return (
     <section id="products" className="bg-[var(--color-axentra-mist)] py-16 md:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="text-center mb-12 md:mb-16">
-          <span className="font-body text-[var(--color-axentra-section-title)] font-semibold tracking-[0.1em] text-sm uppercase">
-            PRODUCTS BY AXENTRA SYSTEMS
-          </span>
-        </div>
+        <SectionHeader
+          eyebrow={t("products:eyebrow")}
+          title={t("products:title")}
+          description={t("products:description")}
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
 
-          <motion.div
+          <motion.a
+            href={process.env.NEXT_PUBLIC_AMAUTA_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0 }}
-            onClick={() => onSelectProduct("Amauta")}
-            onKeyDown={(e) => { if (e.key === 'Enter') onSelectProduct("Amauta"); }}
-            role="button"
-            tabIndex={0}
             className="group relative bg-white rounded-[16px] border border-[var(--color-axentra-mist)] p-6 md:p-8 shadow-[0_1px_3px_rgba(10,29,58,0.06)] hover:shadow-[0_6px_20px_rgba(10,29,58,0.10)] transition-all duration-300 hover:-translate-y-1 cursor-pointer overflow-hidden flex flex-col"
           >
             <div className="absolute right-0 bottom-0 w-3/5 h-full pointer-events-none opacity-40 group-hover:opacity-60 transition-opacity">
@@ -48,7 +51,7 @@ export function ProductsSection({ onSelectProduct }: ProductsSectionProps) {
               <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex-shrink-0 p-1 flex items-center justify-center">
                 <img
                   src="/amauta-mascot.png"
-                  alt="Amauta Mascot"
+                  alt={t("products:amauta.mascotAlt")}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
@@ -64,17 +67,17 @@ export function ProductsSection({ onSelectProduct }: ProductsSectionProps) {
                   Amauta
                 </h3>
                 <p className="font-body text-[var(--color-axentra-gray)] text-lg font-medium">
-                  A smarter way to grow
+                  {t("products:amauta.tagline")}
                 </p>
               </div>
             </div>
 
             <div className="mt-6 pt-4 border-t border-[var(--color-axentra-mist)] flex items-center relative z-10">
               <span className="inline-flex items-center px-3.5 py-1.5 rounded-[6px] border border-[var(--color-axentra-blue)] text-[var(--color-axentra-blue)] text-xs font-semibold font-body bg-white shadow-xs">
-                Adaptive Learning Product
+                {t("products:amauta.badge")}
               </span>
             </div>
-          </motion.div>
+          </motion.a>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -109,13 +112,13 @@ export function ProductsSection({ onSelectProduct }: ProductsSectionProps) {
                 Kallap
               </h3>
               <p className="font-body text-[var(--color-axentra-gray)] text-lg font-normal">
-                Dreams become direction
+                {t("products:kallap.tagline")}
               </p>
             </div>
 
             <div className="mt-6 pt-4 border-t border-[var(--color-axentra-mist)] flex items-center relative z-10">
               <span className="inline-flex items-center px-3.5 py-1.5 rounded-[6px] border border-[var(--color-axentra-blue)] text-[var(--color-axentra-blue)] text-xs font-semibold font-body bg-white shadow-xs">
-                Career Opportunity Product
+                {t("products:kallap.badge")}
               </span>
             </div>
           </motion.div>

@@ -1,0 +1,92 @@
+{
+  "contactModal": {
+    "ariaLabel": "Contact form",
+    "close": "Close modal",
+    "eyebrow": "GET IN TOUCH",
+    "title": "Let's Architect Your Next Project",
+    "description": "Fill out the form below and our enterprise technology specialists will contact you within 24 hours.",
+    "nameLabel": "Full Name *",
+    "namePlaceholder": "Jane Doe",
+    "emailLabel": "Business Email *",
+    "emailPlaceholder": "jane@company.com",
+    "companyLabel": "Organization / Company",
+    "companyPlaceholder": "Acme Corp",
+    "capabilityLabel": "Primary Capability Needed",
+    "capabilities": [
+      "Technology Consulting",
+      "Intelligent Software",
+      "AI & Automation",
+      "Cloud, Data & Platforms",
+      "Amauta Adaptive Learning",
+      "Kallap Career Opportunity"
+    ],
+    "messageLabel": "Project Brief or Scope",
+    "messagePlaceholder": "Briefly describe your objectives, timeline, or key technical challenges...",
+    "submit": "Submit Inquiry",
+    "thankYouTitle": "Thank You, {{name}}!",
+    "friend": "Friend",
+    "successMessage": "Your inquiry regarding {{interest}} has been received. An Axentra Systems consultant will reach out shortly.",
+    "backToSite": "Back to Site"
+  },
+  "detailModal": {
+    "close": "Close",
+    "featuresTitle": "Key Features & Architectural Deliverables"
+  },
+  "caseStudyCategory": "Case Study • {{category}}",
+  "caseStudySubject": "Case Study Inquiry: {{title}}",
+  "insightCategory": "Thought Leadership • {{category}}",
+  "insightSubject": "Insight Discussion: {{title}}",
+  "subjectFullCapabilities": "Full Capabilities Briefing",
+  "subjectCareer": "Career Application",
+  "footerSections": {
+    "careers": {
+      "category": "Join Our Team",
+      "title": "Careers at Axentra Systems",
+      "subtitle": "Build the Future of Enterprise Technology",
+      "description": "We are always looking for exceptional software architects, AI engineers, cloud infrastructure specialists, and technical strategists.",
+      "bullets": [
+        "Principal Cloud Architect (Remote)",
+        "Senior Machine Learning / RAG Specialist",
+        "Lead Full-Stack Systems Engineer (TypeScript/React/Node)"
+      ],
+      "primaryAction": "Submit Candidate Profile"
+    },
+    "partners": {
+      "category": "Ecosystem",
+      "title": "Axentra Systems Partner Network",
+      "subtitle": "Strategic Technology Alliance Partners",
+      "description": "We collaborate closely with leading cloud providers and AI research institutions to deliver cutting-edge solutions.",
+      "bullets": [
+        "Google Cloud Premier Partner",
+        "AWS Advanced Consulting Partner",
+        "Enterprise AI Alliance"
+      ]
+    },
+    "blog": {
+      "category": "Publications",
+      "title": "Engineering Blog",
+      "subtitle": "Technical Articles & Case Breakdown",
+      "description": "Deep dives written directly by our lead software architects and data engineers on building resilient platforms.",
+      "bullets": [
+        "Building Performant React & Node Architectures",
+        "Optimizing Microservice Latency to < 10ms"
+      ]
+    },
+    "privacy": {
+      "category": "Legal & Compliance",
+      "title": "Privacy Policy",
+      "description": "Axentra Systems LLC is committed to protecting user and client data. We adhere strictly to global data protection laws including GDPR and CCPA."
+    },
+    "terms": {
+      "category": "Legal & Compliance",
+      "title": "Terms of Service",
+      "description": "By accessing Axentra Systems services or websites, you agree to comply with our enterprise service terms and conditions."
+    },
+    "security": {
+      "category": "Trust & Governance",
+      "title": "Security & Compliance",
+      "subtitle": "SOC 2 Type II Certified Architecture",
+      "description": "We incorporate zero-trust architectural principles into every engineering deliverable. All code and infrastructure configurations undergo rigorous static analysis and penetration testing."
+    }
+  }
+}

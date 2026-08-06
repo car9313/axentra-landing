@@ -1,0 +1,37 @@
+{
+  "eyebrow": "CASE STUDIES",
+  "title": "Results that speak for themselves",
+  "description": "The real impact of platform engineering and AI, applied across our clients' operations.",
+  "readCaseStudy": "Read case study",
+  "items": [
+    {
+      "id": "financial-automation",
+      "title": "Enterprise Automation for Financial Services",
+      "stat": "Reduced manual effort by 60%.",
+      "clientCategory": "Fintech & Banking",
+      "impactDetail": "Automated complex compliance workflows, data aggregation pipelines, and customer auditing tasks while boosting operational accuracy to 99.8%."
+    },
+    {
+      "id": "cloud-modernization",
+      "title": "Cloud Platform Modernization",
+      "stat": "Improved scalability and reliability.",
+      "clientCategory": "Global Logistics",
+      "impactDetail": "Migrated legacy monoliths to modern microservices architecture with zero downtime, lowering infrastructure costs by 35% and improving uptime to 99.99%."
+    },
+    {
+      "id": "ai-operations",
+      "title": "AI-Driven Insights for Operations",
+      "stat": "Delivered actionable insights at scale.",
+      "clientCategory": "Industrial Manufacturing",
+      "impactDetail": "Deployed predictive maintenance algorithms and real-time telemetry dashboards, reducing unexpected equipment downtime by over 45%."
+    }
+  ],
+  "detailBullets": [
+    "Architectured custom, scalable enterprise platform",
+    "Eliminated manual bottlenecks and data silos",
+    "Delivered transparent real-time metrics and executive dashboarding",
+    "Ensured full compliance and zero-downtime migration"
+  ],
+  "primaryAction": "Discuss Similar Solution",
+  "categoryPrefix": "Case Study"
+}
