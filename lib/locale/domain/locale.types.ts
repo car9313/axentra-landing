@@ -16,7 +16,7 @@ export interface LocaleInfo {
 }
 
 export type GeoResult =
-  | { success: true; localeId: LocaleId }
+  | { success: true; localeId: LocaleId; countryCode?: string }
   | {
       success: false;
       reason:
@@ -25,6 +25,8 @@ export type GeoResult =
         | "network_error"
         | "unmapped_country"
         | "parse_error";
+      /** País detectado (ISO alpha-2) para logs de decisión. */
+      countryCode?: string;
     };
 
 export type LocaleNamespace =

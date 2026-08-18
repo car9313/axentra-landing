@@ -5,6 +5,7 @@ import {
   LOCALE_MAP,
   SUPPORTED_LOCALES,
 } from "@/lib/locale/domain/locale.config";
+import { fallbackLocaleForCountry } from "@/lib/locale/domain/locale-languages";
 import {
   COOKIE_KEY,
   DEFAULT_LOCALE,
@@ -31,7 +32,9 @@ function detectCountryLocale(request: NextRequest): LocaleId | null {
   for (const header of COUNTRY_HEADERS) {
     const country = request.headers.get(header);
     if (!country) continue;
-    const localeId = LOCALE_MAP[country];
+    const normalized = country.trim().toUpperCase();
+    // Traducción regional del país; si no existe, default por idioma (es-LA/en)
+    const localeId = LOCALE_MAP[normalized] ?? fallbackLocaleForCountry(normalized);
     if (localeId) return localeId;
   }
   return null;

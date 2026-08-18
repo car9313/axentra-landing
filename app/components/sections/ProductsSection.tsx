@@ -13,7 +13,7 @@ interface ProductsSectionProps {
 export function ProductsSection({ onSelectProduct }: ProductsSectionProps) {
   const { t } = useLanguage();
   return (
-    <section id="products" className="bg-[var(--color-axentra-mist)] py-16 md:py-24">
+    <section id="products" className="bg-axentra-mist py-16 md:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <SectionHeader
@@ -32,7 +32,7 @@ export function ProductsSection({ onSelectProduct }: ProductsSectionProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0 }}
-            className="group relative bg-white rounded-[16px] border border-[var(--color-axentra-mist)] p-6 md:p-8 shadow-[0_1px_3px_rgba(10,29,58,0.06)] hover:shadow-[0_6px_20px_rgba(10,29,58,0.10)] transition-all duration-300 hover:-translate-y-1 cursor-pointer overflow-hidden flex flex-col"
+            className="group relative bg-white rounded-[16px] border border-axentra-mist p-6 md:p-8 shadow-[0_1px_3px_rgba(10,29,58,0.06)] hover:shadow-[0_6px_20px_rgba(10,29,58,0.10)] transition-all duration-300 hover:-translate-y-1 cursor-pointer overflow-hidden flex flex-col"
           >
             <div className="absolute right-0 bottom-0 w-3/5 h-full pointer-events-none opacity-40 group-hover:opacity-60 transition-opacity">
               <svg viewBox="0 0 200 200" className="w-full h-full" fill="none">
@@ -48,7 +48,7 @@ export function ProductsSection({ onSelectProduct }: ProductsSectionProps) {
             </div>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 relative z-10">
-              <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex-shrink-0 p-1 flex items-center justify-center">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 shrink-0 p-1 flex items-center justify-center">
                 <img
                   src="/amauta-mascot.png"
                   alt={t("products:amauta.mascotAlt")}
@@ -66,14 +66,14 @@ export function ProductsSection({ onSelectProduct }: ProductsSectionProps) {
                   }}>
                   Amauta
                 </h3>
-                <p className="font-body text-[var(--color-axentra-gray)] text-lg font-medium">
+                <p className="font-body text-axentra-gray text-lg font-medium">
                   {t("products:amauta.tagline")}
                 </p>
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-[var(--color-axentra-mist)] flex items-center relative z-10">
-              <span className="inline-flex items-center px-3.5 py-1.5 rounded-[6px] border border-[var(--color-axentra-blue)] text-[var(--color-axentra-blue)] text-xs font-semibold font-body bg-white shadow-xs">
+            <div className="mt-6 pt-4 border-t border-axentra-mist flex items-center relative z-10">
+              <span className="inline-flex items-center px-3.5 py-1.5 rounded-md border border-axentra-blue text-axentra-blue text-xs font-semibold font-body bg-white shadow-xs">
                 {t("products:amauta.badge")}
               </span>
             </div>
@@ -88,7 +88,7 @@ export function ProductsSection({ onSelectProduct }: ProductsSectionProps) {
             onKeyDown={(e) => { if (e.key === 'Enter') onSelectProduct("Kallap"); }}
             role="button"
             tabIndex={0}
-            className="group relative bg-white rounded-[16px] border border-[var(--color-axentra-mist)] p-6 sm:p-8 md:p-10 shadow-[0_1px_3px_rgba(10,29,58,0.06)] hover:shadow-[0_6px_20px_rgba(10,29,58,0.10)] transition-all duration-300 hover:-translate-y-1 cursor-pointer overflow-hidden flex flex-col"
+            className="group relative bg-white rounded-[16px] border border-axentra-mist p-6 sm:p-8 md:p-10 shadow-[0_1px_3px_rgba(10,29,58,0.06)] hover:shadow-[0_6px_20px_rgba(10,29,58,0.10)] transition-all duration-300 hover:-translate-y-1 cursor-pointer overflow-hidden flex flex-col"
           >
             <div className="absolute right-0 bottom-0 w-3/5 h-full pointer-events-none opacity-35 group-hover:opacity-55 transition-opacity">
               <svg viewBox="0 0 200 200" className="w-full h-full" fill="none">
@@ -97,9 +97,9 @@ export function ProductsSection({ onSelectProduct }: ProductsSectionProps) {
                     Array.from({ length: 9 }).map((_, c) => (
                       <circle
                         key={`dot-${r}-${c}`}
-                        cx={30 + c * 18 + r * 3}
-                        cy={20 + r * 18}
-                        r={1.5 + (r + c) * 0.25}
+                        cx={40 + c * 20 + r * 2}
+                        cy={30  + r * 20}
+                        r={1 + (r + c) * 0.35}
                       />
                     ))
                   )}
@@ -108,16 +108,16 @@ export function ProductsSection({ onSelectProduct }: ProductsSectionProps) {
             </div>
 
             <div className="space-y-3 relative z-10">
-              <h3 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold text-[var(--color-axentra-navy)] tracking-tight">
+              <h3 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold text-axentra-navy tracking-tight">
                 Kallap
               </h3>
-              <p className="font-body text-[var(--color-axentra-gray)] text-lg font-normal">
+              <p className="font-body text-axentra-gray text-lg font-normal">
                 {t("products:kallap.tagline")}
               </p>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-[var(--color-axentra-mist)] flex items-center relative z-10">
-              <span className="inline-flex items-center px-3.5 py-1.5 rounded-[6px] border border-[var(--color-axentra-blue)] text-[var(--color-axentra-blue)] text-xs font-semibold font-body bg-white shadow-xs">
+            <div className="mt-6 pt-4 border-t border-axentra-mist flex items-center relative z-10">
+              <span className="inline-flex items-center px-3.5 py-1.5 rounded-md border border-axentra-blue text-axentra-blue text-xs font-semibold font-body bg-white shadow-xs">
                 {t("products:kallap.badge")}
               </span>
             </div>

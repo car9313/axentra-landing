@@ -52,6 +52,11 @@ export const SUPPORTED_LOCALES: LocaleInfo[] = [
   },
 ];
 
+/**
+ * Traducción regional por país. Los países sin traducción regional pero con
+ * idioma conocido (hispano/anglófono) los resuelve `fallbackLocaleForCountry`
+ * en `locale-languages.ts`.
+ */
 export const LOCALE_MAP: Record<string, LocaleInfo["id"]> = {
   MX: "es-MX",
   AR: "es-AR",
@@ -59,11 +64,6 @@ export const LOCALE_MAP: Record<string, LocaleInfo["id"]> = {
   CO: "es-CO",
   PE: "es-PE",
   US: "en",
-  BO: "es-LA", VE: "es-LA", EC: "es-LA", PY: "es-LA",
-  UY: "es-LA", CR: "es-LA", GT: "es-LA", HN: "es-LA",
-  SV: "es-LA", NI: "es-LA", PA: "es-LA", DO: "es-LA",
-  CU: "es-LA",
-  PR: "es-LA",
 };
 
 export const REGION_TO_LOCALE: Record<string, LocaleInfo["id"]> = {

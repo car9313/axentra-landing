@@ -82,6 +82,17 @@ function applyLocale(locale: LocaleId) {
   void i18next.changeLanguage(locale);
 }
 
+/**
+ * Resolución del locale:
+ * 1. ?locale= (override desarrollo/testing — sin persistencia ni geo)
+ * 2. Provisional de primer paint: <html lang> del SSR → cookie → navigator.language
+ * 3. Geo client-side SIEMPRE se ejecuta (cloudflare /cdn-cgi/trace → fallback
+ *    ipwho.is; resuelta por el navegador, sin depender del hosting):
+ *    - geo difiere del provisional → se traduce y re-persiste la cookie
+ *    - geo coincide → no-op (sin re-traducir, sin re-persistir)
+ *
+ * La geo tiene prioridad sobre cualquier valor persistido/SSR.
+ */
 export function LocaleProvider({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const [resolvedLocale, setResolvedLocale] = useState<LocaleId>(DEFAULT_LOCALE);
@@ -115,6 +126,7 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
       devLog("language final =", target);
     };
 
+    // 1. ?locale= override (dev/testing)
     const override = new URLSearchParams(window.location.search).get("locale");
     if (isLocaleSupported(override)) {
       devLog("override ?locale =", override);
@@ -122,46 +134,68 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
       return;
     }
 
+    // 2. Provisional de primer paint: SSR (proxy/geo hosting) → cookie → navigator
+    let provisional: LocaleId = DEFAULT_LOCALE;
+    let provisionalSource = "default";
+    const hasCookie = readLocaleCookie() !== null;
+
     const htmlLang = document.documentElement.lang;
     if (
       htmlLang &&
       htmlLang !== DEFAULT_LOCALE &&
       isLocaleSupported(htmlLang)
     ) {
-      devLog("ssr lang =", htmlLang);
-      void applyTarget(htmlLang, true);
-      return;
-    }
-
-    const cookieLocale = readLocaleCookie();
-    if (cookieLocale) {
-      devLog("cookie locale =", cookieLocale);
-      void applyTarget(cookieLocale, true);
-      return;
-    }
-
-    devLog("sin ssr/cookie -> geo-detección");
-    setDetecting(true);
-
-    const init = async () => {
-      let resolved: LocaleId = DEFAULT_LOCALE;
-
-      const geoResult = await detectLocaleFromGeo();
-      if (geoResult.success) {
-        resolved = geoResult.localeId;
-        devLog("geo éxito ->", geoResult.localeId);
+      provisional = htmlLang;
+      provisionalSource = "ssr";
+      devLog("provisional (ssr lang) =", htmlLang);
+    } else {
+      const cookieLocale = readLocaleCookie();
+      if (cookieLocale) {
+        provisional = cookieLocale;
+        provisionalSource = "cookie";
+        devLog("provisional (cookie) =", cookieLocale);
       } else {
-        devLog("geo fallo ->", geoResult.reason);
         const navigatorLocale = getLocaleFromNavigator();
         if (navigatorLocale) {
-          resolved = navigatorLocale;
-          devLog("navigator.language ->", navigatorLocale);
-        } else {
-          devLog("navigator no resolvió -> default");
+          provisional = navigatorLocale;
+          provisionalSource = "navegador";
+          devLog("provisional (navigator) =", navigatorLocale);
         }
       }
+    }
 
-      await applyTarget(resolved, true);
+    // 3. Geo client-side: siempre se ejecuta, en paralelo al primer paint
+    const geoPromise = detectLocaleFromGeo();
+
+    const init = async () => {
+      await applyTarget(provisional, !hasCookie);
+
+      const geoResult = await geoPromise;
+      if (geoResult.success) {
+        devLog("geo éxito ->", geoResult.localeId, geoResult.countryCode ?? "");
+        if (geoResult.localeId !== provisional) {
+          devLog("geo difiere -> traducción");
+          setDetecting(true);
+          await applyTarget(geoResult.localeId, true);
+          router.refresh(); // re-render SSR: <html lang> + metadata localizada
+        } else if (
+          geoResult.localeId !== DEFAULT_LOCALE &&
+          readLocaleCookie() !== geoResult.localeId
+        ) {
+          writeLocaleCookie(geoResult.localeId);
+          devLog("cookie sincronizada ->", geoResult.localeId);
+        }
+      } else {
+        devLog("geo fallo ->", geoResult.reason, "(se mantiene provisional)");
+        if (geoResult.countryCode) {
+          devLog(
+            geoResult.countryCode,
+            "sin traducción ni idioma conocido → se usará",
+            provisional,
+            `(${provisionalSource})`
+          );
+        }
+      }
     };
 
     void init();
@@ -196,7 +230,7 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
     <LocaleContext.Provider value={value}>
       {children}
       <AnimatePresence>
-        {detecting && !isReady && <LocaleSplash key="splash" />}
+        {detecting && <LocaleSplash key="splash" />}
       </AnimatePresence>
     </LocaleContext.Provider>
   );

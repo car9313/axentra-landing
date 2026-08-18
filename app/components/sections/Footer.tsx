@@ -11,10 +11,10 @@ interface FooterProps {
 export function Footer({ onOpenContact, onSelectNav }: FooterProps) {
   const { t } = useLanguage();
   return (
-    <footer className="relative bg-[var(--color-axentra-navy)] text-white pt-16 pb-8 overflow-hidden select-none border-t border-white/10">
+    <footer className="relative bg-axentra-navy text-white pt-16 pb-8 overflow-hidden select-none border-t border-white/10">
 
       <div
-        className="absolute right-0 bottom-0 w-40 sm:w-80 md:w-[480px] h-40 sm:h-80 md:h-[420px] pointer-events-none opacity-10 sm:opacity-25"
+        className="absolute right-0 bottom-0 w-40 sm:w-80 md:w-120 h-40 sm:h-80 md:h-125 pointer-events-none opacity-10 sm:opacity-25"
         aria-hidden="true"
       >
         <svg viewBox="0 0 300 280" className="w-full h-full object-contain">
@@ -26,7 +26,7 @@ export function Footer({ onOpenContact, onSelectNav }: FooterProps) {
                 const colProgress = c / 11;
                 const x = 50 + colProgress * 220 + rowProgress * (colProgress - 0.5) * 80;
                 const size = 5 + rowProgress * 10;
-                const opacity = 0.1 + rowProgress * 0.7;
+                const opacity = 0.1 + rowProgress * 0.5;
                 return (
                   <rect
                     key={`ft-sq-${r}-${c}`}
@@ -54,25 +54,25 @@ export function Footer({ onOpenContact, onSelectNav }: FooterProps) {
           <div className="space-y-4">
             <a href="#" className="flex flex-col justify-center">
               <div className="flex items-center gap-2">
-                <div className="w-2.5 h-6 bg-[var(--color-axentra-blue)] rounded-[2px]" />
+                <div className="w-2.5 h-6 bg-axentra-blue rounded-xs" />
                 <span className="font-display font-black text-2xl tracking-tight text-white leading-none">
-                  AXENTRA <span className="font-light text-[var(--color-axentra-sky)]">SYSTEMS</span>
+                  AXENTRA <span className="font-light text-axentra-sky">SYSTEMS</span>
                 </span>
               </div>
-              <span className="text-xs font-normal text-[var(--color-axentra-mist)]/70 tracking-normal mt-1 font-body">
+              <span className="text-xs font-normal text-axentra-mist/70 tracking-normal mt-1 font-body">
                 {t("common:tagline")}
               </span>
             </a>
-            <p className="text-xs text-[var(--color-axentra-mist)]/60 font-body leading-relaxed max-w-xs">
+            <p className="text-xs text-axentra-mist/60 font-body leading-relaxed max-w-xs">
               {t("footer:description")}
             </p>
           </div>
 
           <div>
-            <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-[var(--color-axentra-sky)] mb-4">
+            <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-axentra-sky mb-4">
               {t("footer:companyTitle")}
             </h4>
-            <ul className="space-y-2.5 text-sm font-body text-[var(--color-axentra-mist)]/80">
+            <ul className="space-y-2.5 text-sm font-body text-axentra-mist/80">
               <li>
                 <button onClick={() => onSelectNav("about")} className="hover:text-white transition-colors cursor-pointer">
                   {t("footer:aboutUs")}
@@ -92,10 +92,10 @@ export function Footer({ onOpenContact, onSelectNav }: FooterProps) {
           </div>
 
           <div>
-            <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-[var(--color-axentra-sky)] mb-4">
+            <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-axentra-sky mb-4">
               {t("footer:resourcesTitle")}
             </h4>
-            <ul className="space-y-2.5 text-sm font-body text-[var(--color-axentra-mist)]/80">
+            <ul className="space-y-2.5 text-sm font-body text-axentra-mist/80">
               <li>
                 <button onClick={() => onSelectNav("insights")} className="hover:text-white transition-colors cursor-pointer">
                   {t("footer:insights")}
@@ -115,10 +115,10 @@ export function Footer({ onOpenContact, onSelectNav }: FooterProps) {
           </div>
 
           <div>
-            <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-[var(--color-axentra-sky)] mb-4">
+            <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-axentra-sky mb-4">
               {t("footer:connectTitle")}
             </h4>
-            <ul className="space-y-2.5 text-sm font-body text-[var(--color-axentra-mist)]/80">
+            <ul className="space-y-2.5 text-sm font-body text-axentra-mist/80">
               <li>
                 <button onClick={onOpenContact} className="hover:text-white transition-colors cursor-pointer text-left">
                   {t("footer:contactUs")}
@@ -139,11 +139,10 @@ export function Footer({ onOpenContact, onSelectNav }: FooterProps) {
 
         </div>
 
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-[var(--color-axentra-mist)]/50 font-body gap-4">
+        <div className="pt-8  flex flex-col sm:flex-row items-center justify-between text-xs text-axentra-mist/50 font-body gap-4">
           <p>{t("footer:rights")}</p>
           <div className="flex items-center gap-6">
-            <LanguageSwitcher dark />
-            <div className="flex items-center space-x-6">
+                    <div className="flex items-center space-x-6">
             <button onClick={() => onSelectNav("privacy")} className="hover:text-white transition-colors cursor-pointer">
               {t("footer:privacyPolicy")}
             </button>
